@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+use App\XManager;
+use App\Database;
+use App\Console\Command;
+
+define('BASE_PATH', __DIR__);
+require BASE_PATH . "/vendor/autoload.php";
+require BASE_PATH . "/config/config.php";
+require BASE_PATH . "/config/clash.php";
+require BASE_PATH . "/locale/i18n.php";
+
+// Site startup
+XManager::boot();
+Database::bootDb();
+
+$cat = new Command($argv);
+$cat->boot();
