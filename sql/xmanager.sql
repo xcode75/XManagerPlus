@@ -1101,16 +1101,17 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `sort` int(3) NOT NULL DEFAULT '0',
   `method` varchar(50) NOT NULL DEFAULT 'aes-128-gcm',
   `mu_only` int(2) NOT NULL DEFAULT '1',
-  `allowinsecure` tinyint(2) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+  `allowinsecure` tinyint(2) NOT NULL DEFAULT '0',
+  `rserver` varchar(300) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `servers`
 --
 
-INSERT INTO `servers` (`id`, `name`, `type`, `server`, `headertype`, `port`, `outside_port`, `protocol`, `flow`, `security`, `xhost`, `xpath`, `info`, `status`, `rate`, `level`, `speedlimit`, `connector`, `bandwidth`, `bandwidth_limit`, `bandwidthlimit_resetday`, `heartbeat`, `node_ip`, `group`, `online`, `sort`, `method`, `mu_only`, `allowinsecure`) VALUES
-(1, 'Expired', 0, '8.8.8.8', '', 443, 0, '', '', 'tls', '', '', 'GB', NULL, 0, -1, 0, 0, 0, 0, 0, 0, '127.0.0.1', 0, 0, 1, 'aes-128-gcm', 1, 0),
-(2, 'VULTR-US-A', 1, 'vultr.gbxcloud.com', 'none', 443, 0, 'ws', 'none', 'tls', 'vultr.gbxcloud.com', '/', 'US', NULL, 1, 1, 0, 0, 901786583, 0, 0, 1636541099, '144.202.124.139', 0, 1, 4, 'aes-128-gcm', 1, 1);
+INSERT INTO `servers` (`id`, `name`, `type`, `server`, `headertype`, `port`, `outside_port`, `protocol`, `flow`, `security`, `xhost`, `xpath`, `info`, `status`, `rate`, `level`, `speedlimit`, `connector`, `bandwidth`, `bandwidth_limit`, `bandwidthlimit_resetday`, `heartbeat`, `node_ip`, `group`, `online`, `sort`, `method`, `mu_only`, `allowinsecure`, `rserver`) VALUES
+(1, 'Expired', 0, '8.8.8.8', '', 443, 0, '', '', 'tls', '', '', 'GB', NULL, 0, -1, 0, 0, 0, 0, 0, 0, '127.0.0.1', 0, 0, 1, 'aes-128-gcm', 1, 0, NULL),
+(2, 'VULTR-US-A', 1, 'vultr.gbxcloud.com', 'none', 8443, 0, 'ws', 'none', 'tls', 'vultr.gbxcloud.com', '/', 'US', NULL, 1, 1, 0, 0, 920840589, 0, 0, 1636622938, '144.202.124.139', 0, 1, 4, 'aes-128-gcm', 1, 1, NULL);
 
 -- --------------------------------------------------------
 
