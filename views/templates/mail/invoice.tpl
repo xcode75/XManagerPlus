@@ -1,162 +1,163 @@
-!odMbo!
-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
+
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700" rel="stylesheet" media="screen">
+    <style>
+      .hover-underline:hover {
+        text-decoration: underline !important;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes ping {
+
+        75%,
+        100% {
+          transform: scale(2);
+          opacity: 0;
+        }
+      }
+
+      @keyframes pulse {
+        50% {
+          opacity: .5;
+        }
+      }
+
+      @keyframes bounce {
+
+        0%,
+        100% {
+          transform: translateY(-25%);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+          transform: none;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .sm-px-24 {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+
+        .sm-py-32 {
+          padding-top: 32px !important;
+          padding-bottom: 32px !important;
+        }
+
+        .sm-w-full {
+          width: 100% !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0; width: 100%; word-break: break-word; -webkit-font-smoothing: antialiased;">
+    <div role="article" aria-roledescription="email" aria-label="" lang="en">
+      <table style="font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+          <td align="center" style="--bg-opacity: 1; background-color: #ffffff; background-color: #ffffff; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif;" bgcolor="rgba(236, 239, 241, var(--bg-opacity))">
+            <table class="sm-w-full" style="font-family: 'Montserrat',Arial,sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td align="center" class="sm-px-24" style="font-family: 'Montserrat',Arial,sans-serif;">
+                  <table style="font-family: 'Montserrat',Arial,sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td class="sm-px-24" style="--bg-opacity: 1; background-color: #ffffff; background-color: rgba(255, 255, 255, var(--bg-opacity)); border-radius: 4px; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; font-size: 14px; line-height: 24px; padding: 48px; text-align: left; --text-opacity: 1; color: #626262; color: rgba(98, 98, 98, var(--text-opacity));" bgcolor="rgba(255, 255, 255, var(--bg-opacity))" align="left">
+                        <p style="font-weight: 600; font-size: 18px; margin-bottom: 0;">{$lang->get('Hello')}</p>
+                        <p style="font-weight: 700; font-size: 20px; margin-top: 0; --text-opacity: 1; color: #ff5850; color: rgba(255, 88, 80, var(--text-opacity));">{$Username}</p>
+                        <p style="margin: 0 0 24px;">
+                          {$lang->get('TInvoice_1')} {$Config['appName']|upper}. {$lang->get('TInvoice_2')}
+                        </p>
+                        <table style="font-family: 'Montserrat',Arial,sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td style="font-family: 'Montserrat',Arial,sans-serif;">
+                              <h3 style="font-weight: 700; font-size: 12px; margin-top: 0; text-align: left;">#{$orderID}</h3>
+                            </td>
+                            <td style="font-family: 'Montserrat',Arial,sans-serif;">
+                              <h3 style="font-weight: 700; font-size: 12px; margin-top: 0; text-align: right;">
+                                {$orderDate}
+                              </h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" style="font-family: 'Montserrat',Arial,sans-serif;">
+                              <table style="font-family: 'Montserrat',Arial,sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                  <th align="left" style="padding-bottom: 8px;">
+                                    <p>{$lang->get('Description')}</p>
+                                  </th>
+                                  <th align="right" style="padding-bottom: 8px;">
+                                    <p>{$lang->get('OrderAmount')}</p>
+                                  </th>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: 'Montserrat',Arial,sans-serif; font-size: 14px; padding-top: 10px; padding-bottom: 10px; width: 80%;" width="80%">
+                                    {$itemDes}
+                                  </td>
+                                  <td align="right" style="font-family: 'Montserrat',Arial,sans-serif; font-size: 14px; text-align: right; width: 20%;" width="20%">{$itemPrice}</td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: 'Montserrat',Arial,sans-serif; font-size: 14px; padding-top: 10px; padding-bottom: 10px; width: 80%;" width="80%">
+                                    {$lang->get('discount')}
+                                  </td>
+                                  <td align="right" style="font-family: 'Montserrat',Arial,sans-serif; font-size: 14px; text-align: right; width: 20%;" width="20%">{$disPrice}</td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: 'Montserrat',Arial,sans-serif; width: 80%;" width="80%">
+                                    <p align="right" style="font-weight: 700; font-size: 14px; line-height: 24px; margin: 0; padding-right: 16px; text-align: right;">
+                                      {$lang->get('TotalPrice')}
+                                    </p>
+                                  </td>
+                                  <td style="font-family: 'Montserrat',Arial,sans-serif; width: 20%;" width="20%">
+                                    <p align="right" style="font-weight: 700; font-size: 14px; line-height: 24px; margin: 0; text-align: right;">
+                                      {$TotalPrice}
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table align="center" style="font-family: 'Montserrat',Arial,sans-serif; margin-left: auto; margin-right: auto; text-align: center; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            
+                          </tr>
+                        </table>
+                        <p style="font-size: 14px; line-height: 24px; margin-top: 6px; margin-bottom: 20px;"><hr>
+                          {$lang->get('HelpNote')}
+                        </p>
+                        <p style="font-size: 14px; line-height: 24px; margin-top: 6px; margin-bottom: 20px;">
+                          {$lang->get('ThanksMail_2')},
+                          <br>{$Config['appName']|upper}
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family: 'Montserrat',Arial,sans-serif; height: 20px;" height="20"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+</html>

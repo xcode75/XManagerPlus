@@ -1,132 +1,130 @@
-!odMbo!
-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
-4bQ7SxFxzgCQNn/0zU2Q0uPON/7w3BdRmHtb
+
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700" rel="stylesheet" media="screen">
+    <style>
+      .hover-underline:hover {
+        text-decoration: underline !important;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes ping {
+
+        75%,
+        100% {
+          transform: scale(2);
+          opacity: 0;
+        }
+      }
+
+      @keyframes pulse {
+        50% {
+          opacity: .5;
+        }
+      }
+
+      @keyframes bounce {
+
+        0%,
+        100% {
+          transform: translateY(-25%);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+          transform: none;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .sm-px-24 {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+
+        .sm-py-32 {
+          padding-top: 32px !important;
+          padding-bottom: 32px !important;
+        }
+
+        .sm-w-full {
+          width: 100% !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0; width: 100%; word-break: break-word; -webkit-font-smoothing: antialiased; --bg-opacity: 1; background-color: #eceff1; background-color: rgba(236, 239, 241, var(--bg-opacity));">
+   <div role="article" aria-roledescription="email" aria-label="Reset your Password" lang="en">
+      <table style="font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+          <td align="center" style="--bg-opacity: 1; background-color: #ffffff; background-color: #ffffff; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif;" bgcolor="rgba(236, 239, 241, var(--bg-opacity))">
+            <table class="sm-w-full" style="font-family: 'Montserrat',Arial,sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td align="center" class="sm-px-24" style="font-family: 'Montserrat',Arial,sans-serif;">
+                  <table style="font-family: 'Montserrat',Arial,sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td class="sm-px-24" style="--bg-opacity: 1; background-color: #ffffff; background-color: rgba(255, 255, 255, var(--bg-opacity)); border-radius: 4px; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; font-size: 14px; line-height: 24px; padding: 48px; text-align: left; --text-opacity: 1; color: #626262; color: rgba(98, 98, 98, var(--text-opacity));" bgcolor="rgba(255, 255, 255, var(--bg-opacity))" align="left">
+                        <p style="font-weight: 600; font-size: 18px; margin-bottom: 0;">{$lang->get('Hello')}</p>
+                        <p style="font-weight: 700; font-size: 20px; margin-top: 0; --text-opacity: 1; color: #ff5850; color: rgba(255, 88, 80, var(--text-opacity));">{$Username}!</p>
+                        <p style="margin: 0 0 24px;">
+                          {$lang->get('Passnote1')}
+                          <span style="font-weight: 600;">{$Config['appName']}</span> {$lang->get('Passnote2')} -
+                          IP - <span style="font-weight: 600;">{$requestip}</span> .
+                        </p>
+                        <p style="margin: 0 0 24px;">{$lang->get('Uselink')}.</p>
+                        <a href="{$resetUrl}" style="display: block; font-size: 14px; line-height: 100%; margin-bottom: 24px; --text-opacity: 1; color: {$Config['app_color']}; color: {$Config['app_color']}; text-decoration: none;">{$resetUrl}</a>
+                        <table style="font-family: 'Montserrat',Arial,sans-serif;" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td style="mso-padding-alt: 16px 24px; --bg-opacity: 1; background-color: {$Config['app_color']}; background-color: {$Config['app_color']}; border-radius: 4px; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif;" bgcolor="rgba(115, 103, 240, var(--bg-opacity))">
+                              <a href="{$resetUrl}" style="display: block; font-weight: 600; font-size: 14px; line-height: 100%; padding: 16px 24px; --text-opacity: 1; color: #ffffff; color: rgba(255, 255, 255, var(--text-opacity)); text-decoration: none;">{$lang->get('RPass')} &rarr;</a>
+                            </td>
+                          </tr>
+                        </table>
+                        <p style="margin: 24px 0;">
+                          <span style="font-weight: 600;">{$lang->get('verifynote4')}:</span> 
+							{$lang->get('expireMail_1')} {$expire} {$lang->get('expireMail_2')}.
+                        </p>
+                        <p style="margin: 0;">
+                          {$lang->get('ignoreMail')}.
+                        </p>
+                        <table style="font-family: 'Montserrat',Arial,sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td style="font-family: 'Montserrat',Arial,sans-serif; padding-top: 32px; padding-bottom: 32px;">
+                              <div style="--bg-opacity: 1; background-color: #eceff1; background-color: rgba(236, 239, 241, var(--bg-opacity)); height: 1px; line-height: 1px;">&zwnj;</div>
+                            </td>
+                          </tr>
+                        </table>
+                        <p style="margin: 0 0 16px;">{$lang->get('ThanksMail_2')}, <br>{$Config['appName']|upper}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-family: 'Montserrat',Arial,sans-serif; height: 20px;" height="20"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-family: 'Montserrat',Arial,sans-serif; height: 16px;" height="16"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+</html>
