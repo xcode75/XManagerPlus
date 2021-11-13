@@ -1,36 +1,115 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+/*
+ * This file is part of the `nicolab/php-ftp-client` package.
+ *
+ * (c) Nicolas Tallefourtane <dev@nicolab.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @copyright Nicolas Tallefourtane http://nicolab.net
+ */
+namespace FtpClient;
+
+/**
+ * Wrap the PHP FTP functions
+ *
+ * @method bool alloc() alloc(int $filesize, string &$result = null) Allocates space for a file to be uploaded
+ * @method bool cdup() cdup() Changes to the parent directory
+ * @method bool chdir() chdir(string $directory) Changes the current directory on a FTP server
+ * @method int chmod() chmod(int $mode, string $filename) Set permissions on a file via FTP
+ * @method bool close() close() Closes an FTP connection
+ * @method bool delete() delete(string $path) Deletes a file on the FTP server
+ * @method bool exec() exec(string $command) Requests execution of a command on the FTP server
+ * @method bool fget() fget(resource $handle, string $remote_file, int $mode, int $resumepos = 0) Downloads a file from the FTP server and saves to an open file
+ * @method bool fput() fput(string $remote_file, resource $handle, int $mode, int $startpos = 0) Uploads from an open file to the FTP server
+ * @method mixed get_option() get_option(int $option) Retrieves various runtime behaviours of the current FTP stream
+ * @method bool get() get(string $local_file, string $remote_file, int $mode, int $resumepos = 0) Downloads a file from the FTP server
+ * @method bool login() login(string $username, string $password) Logs in to an FTP connection
+ * @method int mdtm() mdtm(string $remote_file) Returns the last modified time of the given file
+ * @method string mkdir() mkdir(string $directory) Creates a directory
+ * @method int nb_continue() nb_continue() Continues retrieving/sending a file (non-blocking)
+ * @method int nb_fget() nb_fget(resource $handle, string $remote_file, int $mode, int $resumepos = 0) Retrieves a file from the FTP server and writes it to an open file (non-blocking)
+ * @method int nb_fput() nb_fput(string $remote_file, resource $handle, int $mode, int $startpos = 0) Stores a file from an open file to the FTP server (non-blocking)
+ * @method int nb_get() nb_get(string $local_file, string $remote_file, int $mode, int $resumepos = 0) Retrieves a file from the FTP server and writes it to a local file (non-blocking)
+ * @method int nb_put() nb_put(string $remote_file, string $local_file, int $mode, int $startpos = 0) Stores a file on the FTP server (non-blocking)
+ * @method array nlist() nlist(string $directory) Returns a list of files in the given directory
+ * @method bool pasv() pasv(bool $pasv) Turns passive mode on or off
+ * @method bool put() put(string $remote_file, string $local_file, int $mode, int $startpos = 0) Uploads a file to the FTP server
+ * @method string pwd() pwd() Returns the current directory name
+ * @method bool quit() quit() Closes an FTP connection
+ * @method array raw() raw(string $command) Sends an arbitrary command to an FTP server
+ * @method array rawlist() rawlist(string $directory, bool $recursive = false) Returns a detailed list of files in the given directory
+ * @method bool rename() rename(string $oldname, string $newname) Renames a file or a directory on the FTP server
+ * @method bool rmdir() rmdir(string $directory) Removes a directory
+ * @method bool set_option() set_option(int $option, mixed $value) Set miscellaneous runtime FTP options
+ * @method bool site() site(string $command) Sends a SITE command to the server
+ * @method int size() size(string $remote_file) Returns the size of the given file
+ * @method string systype() systype() Returns the system type identifier of the remote FTP server
+ *
+ * @author Nicolas Tallefourtane <dev@nicolab.net>
+ */
+class FtpWrapper
+{
+    /**
+     * The connection with the server
+     *
+     * @var resource
+     */
+    protected $conn;
+
+    /**
+     * Constructor.
+     *
+     * @param resource &$connection The FTP (or SSL-FTP) connection (takes by reference).
+     */
+    public function __construct(&$connection)
+    {
+        $this->conn = &$connection;
+    }
+
+    /**
+     * Forward the method call to FTP functions
+     *
+     * @param  string       $function
+     * @param  array        $arguments
+     * @return mixed
+     * @throws FtpException When the function is not valid
+     */
+    public function __call($function, array $arguments)
+    {
+        $function = 'ftp_' . $function;
+
+        if (function_exists($function)) {
+            array_unshift($arguments, $this->conn);
+            return call_user_func_array($function, $arguments);
+        }
+
+        throw new FtpException("{$function} is not a valid FTP function");
+    }
+
+    /**
+     * Opens a FTP connection
+     *
+     * @param  string   $host
+     * @param  int      $port
+     * @param  int      $timeout
+     * @return resource
+     */
+    public function connect($host, $port = 21, $timeout = 90)
+    {
+        return ftp_connect($host, $port, $timeout);
+    }
+
+    /**
+     * Opens a Secure SSL-FTP connection
+     * @param  string   $host
+     * @param  int      $port
+     * @param  int      $timeout
+     * @return resource
+     */
+    public function ssl_connect($host, $port = 21, $timeout = 90)
+    {
+        return ftp_ssl_connect($host, $port, $timeout);
+    }
+}

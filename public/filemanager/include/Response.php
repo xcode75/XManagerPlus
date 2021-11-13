@@ -1,118 +1,365 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php 
+
+/**
+ * Class Response
+ * Simplified copy of Symfony/Http-Foundation Response
+ * to allow compatibility with frameworks
+ *
+ * @package Filemanager
+ */
+class Response {
+
+	const HTTP_CONTINUE = 100;
+	const HTTP_SWITCHING_PROTOCOLS = 101;
+	const HTTP_PROCESSING = 102;            // RFC2518
+	const HTTP_OK = 200;
+	const HTTP_CREATED = 201;
+	const HTTP_ACCEPTED = 202;
+	const HTTP_NON_AUTHORITATIVE_INFORMATION = 203;
+	const HTTP_NO_CONTENT = 204;
+	const HTTP_RESET_CONTENT = 205;
+	const HTTP_PARTIAL_CONTENT = 206;
+	const HTTP_MULTI_STATUS = 207;          // RFC4918
+	const HTTP_ALREADY_REPORTED = 208;      // RFC5842
+	const HTTP_IM_USED = 226;               // RFC3229
+	const HTTP_MULTIPLE_CHOICES = 300;
+	const HTTP_MOVED_PERMANENTLY = 301;
+	const HTTP_FOUND = 302;
+	const HTTP_SEE_OTHER = 303;
+	const HTTP_NOT_MODIFIED = 304;
+	const HTTP_USE_PROXY = 305;
+	const HTTP_RESERVED = 306;
+	const HTTP_TEMPORARY_REDIRECT = 307;
+	const HTTP_PERMANENTLY_REDIRECT = 308;  // RFC7238
+	const HTTP_BAD_REQUEST = 400;
+	const HTTP_UNAUTHORIZED = 401;
+	const HTTP_PAYMENT_REQUIRED = 402;
+	const HTTP_FORBIDDEN = 403;
+	const HTTP_NOT_FOUND = 404;
+	const HTTP_METHOD_NOT_ALLOWED = 405;
+	const HTTP_NOT_ACCEPTABLE = 406;
+	const HTTP_PROXY_AUTHENTICATION_REQUIRED = 407;
+	const HTTP_REQUEST_TIMEOUT = 408;
+	const HTTP_CONFLICT = 409;
+	const HTTP_GONE = 410;
+	const HTTP_LENGTH_REQUIRED = 411;
+	const HTTP_PRECONDITION_FAILED = 412;
+	const HTTP_REQUEST_ENTITY_TOO_LARGE = 413;
+	const HTTP_REQUEST_URI_TOO_LONG = 414;
+	const HTTP_UNSUPPORTED_MEDIA_TYPE = 415;
+	const HTTP_REQUESTED_RANGE_NOT_SATISFIABLE = 416;
+	const HTTP_EXPECTATION_FAILED = 417;
+	const HTTP_I_AM_A_TEAPOT = 418;                                               // RFC2324
+	const HTTP_UNPROCESSABLE_ENTITY = 422;                                        // RFC4918
+	const HTTP_LOCKED = 423;                                                      // RFC4918
+	const HTTP_FAILED_DEPENDENCY = 424;                                           // RFC4918
+	const HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL = 425;   // RFC2817
+	const HTTP_UPGRADE_REQUIRED = 426;                                            // RFC2817
+	const HTTP_PRECONDITION_REQUIRED = 428;                                       // RFC6585
+	const HTTP_TOO_MANY_REQUESTS = 429;                                           // RFC6585
+	const HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE = 431;                             // RFC6585
+	const HTTP_INTERNAL_SERVER_ERROR = 500;
+	const HTTP_NOT_IMPLEMENTED = 501;
+	const HTTP_BAD_GATEWAY = 502;
+	const HTTP_SERVICE_UNAVAILABLE = 503;
+	const HTTP_GATEWAY_TIMEOUT = 504;
+	const HTTP_VERSION_NOT_SUPPORTED = 505;
+	const HTTP_VARIANT_ALSO_NEGOTIATES_EXPERIMENTAL = 506;                        // RFC2295
+	const HTTP_INSUFFICIENT_STORAGE = 507;                                        // RFC4918
+	const HTTP_LOOP_DETECTED = 508;                                               // RFC5842
+	const HTTP_NOT_EXTENDED = 510;                                                // RFC2774
+	const HTTP_NETWORK_AUTHENTICATION_REQUIRED = 511;                             // RFC6585
+
+	/**
+	 * Status codes translation table.
+	 *
+	 * The list of codes is complete according to the
+	 * {@link http://www.iana.org/assignments/http-status-codes/ Hypertext Transfer Protocol (HTTP) Status Code Registry}
+	 * (last updated 2012-02-13).
+	 *
+	 * Unless otherwise noted, the status code is defined in RFC2616.
+	 *
+	 * @var array
+	 */
+	public static $statusTexts = array(
+		100 => 'Continue',
+		101 => 'Switching Protocols',
+		102 => 'Processing',            // RFC2518
+		200 => 'OK',
+		201 => 'Created',
+		202 => 'Accepted',
+		203 => 'Non-Authoritative Information',
+		204 => 'No Content',
+		205 => 'Reset Content',
+		206 => 'Partial Content',
+		207 => 'Multi-Status',          // RFC4918
+		208 => 'Already Reported',      // RFC5842
+		226 => 'IM Used',               // RFC3229
+		300 => 'Multiple Choices',
+		301 => 'Moved Permanently',
+		302 => 'Found',
+		303 => 'See Other',
+		304 => 'Not Modified',
+		305 => 'Use Proxy',
+		306 => 'Reserved',
+		307 => 'Temporary Redirect',
+		308 => 'Permanent Redirect',    // RFC7238
+		400 => 'Bad Request',
+		401 => 'Unauthorized',
+		402 => 'Payment Required',
+		403 => 'Forbidden',
+		404 => 'Not Found',
+		405 => 'Method Not Allowed',
+		406 => 'Not Acceptable',
+		407 => 'Proxy Authentication Required',
+		408 => 'Request Timeout',
+		409 => 'Conflict',
+		410 => 'Gone',
+		411 => 'Length Required',
+		412 => 'Precondition Failed',
+		413 => 'Request Entity Too Large',
+		414 => 'Request-URI Too Long',
+		415 => 'Unsupported Media Type',
+		416 => 'Requested Range Not Satisfiable',
+		417 => 'Expectation Failed',
+		418 => 'I\'m a teapot',                                               // RFC2324
+		422 => 'Unprocessable Entity',                                        // RFC4918
+		423 => 'Locked',                                                      // RFC4918
+		424 => 'Failed Dependency',                                           // RFC4918
+		425 => 'Reserved for WebDAV advanced collections expired proposal',   // RFC2817
+		426 => 'Upgrade Required',                                            // RFC2817
+		428 => 'Precondition Required',                                       // RFC6585
+		429 => 'Too Many Requests',                                           // RFC6585
+		431 => 'Request Header Fields Too Large',                             // RFC6585
+		500 => 'Internal Server Error',
+		501 => 'Not Implemented',
+		502 => 'Bad Gateway',
+		503 => 'Service Unavailable',
+		504 => 'Gateway Timeout',
+		505 => 'HTTP Version Not Supported',
+		506 => 'Variant Also Negotiates (Experimental)',                      // RFC2295
+		507 => 'Insufficient Storage',                                        // RFC4918
+		508 => 'Loop Detected',                                               // RFC5842
+		510 => 'Not Extended',                                                // RFC2774
+		511 => 'Network Authentication Required',                             // RFC6585
+	);
+
+	/**
+	 * @var  string
+	 */
+	protected $content;
+
+	/**
+	 * @var  int
+	 */
+	protected $statusCode;
+
+	/**
+	 * @var  string
+	 */
+	protected $statusText;
+
+	/**
+	 * @var  array
+	 */
+	public $headers;
+
+	/**
+	 * @var string
+	 */
+	protected $version;
+
+	/**
+	 * Construct the response
+	 *
+	 * @param  mixed  $content
+	 * @param  int    $statusCode
+	 * @param  array  $headers
+	 */
+	public function __construct($content = '', $statusCode = 200, $headers = array())
+	{
+		$this->setContent($content);
+		$this->setStatusCode($statusCode);
+		$this->headers = $headers;
+		$this->version = '1.1';
+	}
+
+	/**
+	 * Set the content on the response.
+	 *
+	 * @param  mixed  $content
+	 * @return $this
+	 */
+	public function setContent($content)
+	{
+		if ($content instanceof ArrayObject || is_array($content))
+		{
+			$this->headers['Content-Type'] = array('application/json');
+
+			$content = json_encode($content);
+		}
+
+		$this->content = $content;
+	}
+
+	/**
+	 * Returns the Response as an HTTP string.
+	 *
+	 * The string representation of the Response is the same as the
+	 * one that will be sent to the client only if the prepare() method
+	 * has been called before.
+	 *
+	 * @return string The Response as an HTTP string
+	 *
+	 * @see prepare()
+	 */
+	public function __toString()
+	{
+		return
+			sprintf('HTTP/%s %s %s', $this->version, $this->statusCode, $this->statusText)."\r\n".
+			$this->headers."\r\n".
+			$this->getContent();
+	}
+
+	/**
+	 * Sets the response status code.
+	 *
+	 * @param int   $code HTTP status code
+	 * @param mixed $text HTTP status text
+	 *
+	 * If the status text is null it will be automatically populated for the known
+	 * status codes and left empty otherwise.
+	 *
+	 * @return Response
+	 *
+	 * @throws \InvalidArgumentException When the HTTP status code is not valid
+	 *
+	 * @api
+	 */
+	public function setStatusCode($code, $text = null)
+	{
+		$this->statusCode = $code = (int) $code;
+		if ($this->isInvalid()) {
+			throw new InvalidArgumentException(sprintf('The HTTP status code "%s" is not valid.', $code));
+		}
+
+		if (null === $text) {
+			$this->statusText = isset(self::$statusTexts[$code]) ? self::$statusTexts[$code] : '';
+
+			return $this;
+		}
+
+		if (false === $text) {
+			$this->statusText = '';
+
+			return $this;
+		}
+
+		$this->statusText = $text;
+
+		return $this;
+	}
+
+	// http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+	/**
+	 * Is response invalid?
+	 *
+	 * @return bool
+	 *
+	 * @api
+	 */
+	public function isInvalid()
+	{
+		return $this->statusCode < 100 || $this->statusCode >= 600;
+	}
+
+	/**
+	 * Set a header on the Response.
+	 *
+	 * @param string $key
+	 * @param string $value
+	 * @param bool $replace
+	 * @return $this
+	 */
+	public function header($key, $value, $replace = true)
+	{
+		if (empty($this->headers[$key]))
+		{
+			$this->headers[$key] = array();
+		}
+		if ($replace)
+		{
+			$this->headers[$key] = array($value);
+		}
+		else
+		{
+			$this->headers[$key][] = $value;
+		}
+
+		return $this;
+	}
+
+	/**
+	 * Sends HTTP headers and content.
+	 *
+	 * @return Response
+	 *
+	 * @api
+	 */
+	public function send()
+	{
+		$this->sendHeaders();
+		$this->sendContent();
+
+		if (function_exists('fastcgi_finish_request')) {
+			fastcgi_finish_request();
+		}
+
+		return $this;
+	}
+
+	/**
+	 * Sends content for the current web response.
+	 *
+	 * @return Response
+	 */
+	public function sendContent()
+	{
+		echo $this->content;
+
+		return $this;
+	}
+
+	/**
+	 * Sends HTTP headers.
+	 *
+	 * @return Response
+	 */
+	public function sendHeaders()
+	{
+		// headers have already been sent by the developer
+		if (headers_sent()) {
+			return $this;
+		}
+
+		// status
+		header(sprintf('HTTP/%s %s %s', $this->version, $this->statusCode, $this->statusText), true, $this->statusCode);
+
+		// headers
+		foreach ($this->headers as $name => $values) {
+			if (is_array($values))
+			{
+				foreach ($values as $value)
+				{
+					header($name . ': ' . $value, false, $this->statusCode);
+				}
+			}
+			else
+			{
+				header($name . ': ' . $values, false, $this->statusCode);
+			}
+		}
+
+		return $this;
+	}
+}

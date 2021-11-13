@@ -1,66 +1,82 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+Class FTPClient
+{
+	// *** Class variables
+	private $connectionId;
+	private $loginOk = false;
+	private $messageArray = array();
+
+	public function __construct() { }
+
+	private function logMessage($message) 
+	{
+		$this->messageArray[] = $message;
+	}
+
+	public function getMessages()
+	{
+		return $this->messageArray;
+	}
+
+	public function connect ($server, $ftpUser, $ftpPassword, $isPassive = false)
+	{
+
+		// *** Set up basic connection
+		$this->connectionId = ftp_connect($server);
+
+		// *** Login with username and password
+		$loginResult = ftp_login($this->connectionId, $ftpUser, $ftpPassword);
+
+		// *** Sets passive mode on/off (default off)
+		ftp_pasv($this->connectionId, $isPassive);
+
+		// *** Check connection
+		if ((!$this->connectionId) || (!$loginResult)) {
+			$this->logMessage('FTP connection has failed!');
+			$this->logMessage('Attempted to connect to ' . $server . ' for user ' . $ftpUser, true);
+			return false;
+		} else {
+			$this->logMessage('Connected to ' . $server . ', for user ' . $ftpUser);
+			$this->loginOk = true;
+			return true;
+		}
+	}
+	public function makeDir($directory)
+	{
+		// *** If creating a directory is successful...
+		if (ftp_mkdir($this->connectionId, $directory)) {
+
+			$this->logMessage('Directory "' . $directory . '" created successfully');
+			return true;
+
+		} else {
+
+			// *** ...Else, FAIL.
+			$this->logMessage('Failed creating directory "' . $directory . '"');
+			return false;
+		}
+	}
+
+	public function changeDir($directory)
+	{
+	    if (ftp_chdir($this->connectionId, $directory)) {
+	        $this->logMessage('Current directory is now: ' . ftp_pwd($this->connectionId));
+	        return true;
+	    } else { 
+	        $this->logMessage('Couldn\'t change directory');
+	        return false;
+	    }
+	}
+
+	public function getDirListing($directory = '.', $parameters = '-la')
+	{
+		echo shell_exec('whoami')." is who i am </br>";
+		echo "Current directory is now: " . ftp_pwd($this->connectionId) . "</br>";
+
+	    // get contents of the current directory
+	    $contentsArray = ftp_rawlist($this->connectionId, $parameters . '  ' . $directory);
+	 	echo error_get_last();
+	    return $contentsArray;
+	}
+}

@@ -1,139 +1,126 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-O2P3Ue7qCmUGhtwuZrIpEtR1jcc0Mj0=
+<?php
+
+return array(
+    'Select' => 'Seleccionar',
+    'Deselect_All' => 'Deselect All',
+    'Select_All' => 'Select All',
+    'Erase' => 'Eliminar',
+    'Open' => 'Obrir',
+    'Confirm_del' => 'Segur que desitges eliminar aquest arxiu?',
+    'All' => 'Tots',
+    'Files' => 'Arxius',
+    'Images' => 'Imatges',
+    'Archives' => 'Fitxers',
+    'Error_Upload' => 'L\'arxiu que intenta pujar excedeix el màxim permès.',
+    'Error_extension' => 'L\'extensió de l\'arxiu no està permesa.',
+    'Upload_file' => 'Pujar',
+    'Filters' => 'Filtres',
+    'Videos' => 'Vídeos',
+    'Music' => 'Musica',
+    'New_Folder' => 'Nova carpeta',
+    'Folder_Created' => 'La carpeta ha estat creada exitosament.',
+    'Existing_Folder' => 'Carpeta existent',
+    'Confirm_Folder_del' => 'Segur que desitges eliminar la carpeta i tots els elements que conté?',
+    'Return_Files_List' => 'Tornar a la llista d\'arxius',
+    'Preview' => 'Vista prèvia',
+    'Download' => 'Descarregar',
+    'Insert_Folder_Name' => 'Nom de la carpeta:',
+    'Root' => 'Arrel',
+    'Rename' => 'Renombrar',
+    'Back' => 'Tornar',
+    'View' => 'Vista',
+    'View_list' => 'Vista de llista',
+    'View_columns_list' => 'Vista de columnes',
+    'View_boxes' => 'Vista de miniatures',
+    'Toolbar' => 'Barra d\'eines',
+    'Actions' => 'Accions',
+    'Rename_existing_file' => 'L\'arxiu ja existeix',
+    'Rename_existing_folder' => 'La carpeta ja existeix',
+    'Empty_name' => 'El nom es troba buit',
+    'Text_filter' => 'filtre de text',
+    'Swipe_help' => 'Deslize el nom de l\'arxiu/carpeta per mostrar les opcions',
+    'Upload_base' => 'Pujada d\'arxius SIMPLE',
+    'Upload_java' => 'Pujada d\'arxius JAVA (para arxius pesats)',
+    'Upload_url' => 'URL',
+    'Upload_java_help' => "Si el applet no carrega: 1. Assegura't de tenir Java instal·lat; sinó descarrega-ho i instal·la-ho <a href='http://java.com/en/download/'>des d'aquí</a> 2. Assegura't que el teu firewall no estigui bloquejant res.",
+    'Upload_base_help' => "Arrossega i deixa anar els arxius dins d'aquesta àrea o faci clic en ella (per a navegadors moderns) en cas contrari, seleccioni l'arxiu i faci clic en el botó. Quan finalitzi la pujada, faci clic en el botó superior per tornar.",
+    'Type_dir' => 'Carpeta',
+    'Type' => 'Tipus',
+    'Dimension' => 'Dimensions',
+    'Size' => 'Pes',
+    'Date' => 'Data',
+    'Filename' => 'Nom',
+    'Operations' => 'Operacions',
+    'Date_type' => 'd-m-y',
+    'OK' => 'OK',
+    'Cancel' => 'Cancel·lar',
+    'Sorting' => 'Ordenar',
+    'Show_url' => 'Mostrar URL',
+    'Extract' => 'Extreure aquí',
+    'File_info' => 'Informació',
+    'Edit_image' => 'Editar imatge',
+    'Duplicate' => 'Duplicar',
+    'Folders' => 'Carpetes',
+    'Copy' => 'Copiar',
+    'Cut' => 'Tallar',
+    'Paste' => 'Enganxar',
+    'CB' => 'CB', // clipboard
+    'Paste_Here' => 'Enganxar en aquest directori',
+    'Paste_Confirm' => 'Esteu segur que voleu enganxar en aquest directori? Això sobreescriurà arxius/carpetes existents si es troba cap igual.',
+    'Paste_Failed' => 'No s’ha pogut enganxar els fitxers.',
+    'Clear_Clipboard' => 'Netejar portapapers',
+    'Clear_Clipboard_Confirm' => 'Esteu segur que voleu esborrar el portapapers?',
+    'Files_ON_Clipboard' => 'Hi ha arxius al Portapapers.',
+    'Copy_Cut_Size_Limit' => 'Els arxius/carpetes seleccionades són massa grans per %s. Limit: %d MB/operació', // %s = cut or copy
+    'Copy_Cut_Count_Limit' => 'Heu seleccionat massa fitxers/carpetes a %s. Limit: %d arxiu/operació', // %s = cut or copy
+    'Copy_Cut_Not_Allowed' => 'No te permisos per %s els arxius.', // %s(1) = cut or copy, %s(2) = files or folders
+    'Image_Editor_No_Save' => 'No s’ha pogut desar la imatge.',
+    'Image_Editor_Exit' => "Exit",
+    'Image_Editor_Save' => "Save",
+    'Zip_No_Extract' => 'No es pot extreure. L’Arxiu podria estar corrupte.',
+    'Zip_Invalid' => 'Aquesta extensió no és suportada. Vàlid: zip, gz, tar.',
+    'Dir_No_Write' => 'El directori seleccionat no te permisos d’escriptura.',
+    'Function_Disabled' => 'La funció de %s no esta disponible al servidor.', // %s = cut or copy
+    'File_Permission' => 'Permisos d’arxiu',
+    'File_Permission_Not_Allowed' => 'La modificació dels permisos de %s no es permès.', // %s = files or folders
+    'File_Permission_Recursive' => 'Aplicar recursivament?',
+    'File_Permission_Wrong_Mode' => "El mode de permís subministrat és incorrecte..",
+    'User' => 'Usuari',
+    'Group' => 'Grup',
+    'Yes' => 'Si',
+    'No' => 'No',
+    'Lang_Not_Found' => 'No es pot trobar l\'idioma.',
+    'Lang_Change' => 'Modificar idioma',
+    'File_Not_Found' => 'No s\'ha pogut trobar l\'arxiu.',
+    'File_Open_Edit_Not_Allowed' => 'No tens permisos per obrir %s l\'arxiu.', // %s = open or edit
+    'Edit' => 'Modificar',
+    'Edit_File' => "Editar el contingut de l\'arxiu.",
+    'File_Save_OK' => "Arxiu desat correctament.",
+    'File_Save_Error' => "Hi ha hagut un error mentre es desava l\'arxiu.",
+    'New_File' => 'Nou arxiu',
+    'No_Extension' => 'Ha d\'afegir una extensió d\'arxiu.',
+    'Valid_Extensions' => 'Extensions valides: %s', // %s = txt,log etc.
+    'Upload_message' => "Arrossega arxiu aquí per carregar.",
+
+    'SERVER ERROR' => "SERVER ERROR",
+    'forbidden' => "Forbiden",
+    'wrong path' => "Wrong path",
+    'wrong name' => "Wrong name",
+    'wrong extension' => "Wrong extension",
+    'wrong option' => "Wrong option",
+    'wrong data' => "Wrong data",
+    'wrong action' => "Wrong action",
+    'wrong sub-action' => "Wrong sub-actio",
+    'no action passed' => "No action passed",
+    'no path' => "No path",
+    'no file' => "No file",
+    'view type number missing' => "View type number missing",
+    'Not enought Memory' => "Not enought Memory",
+    'max_size_reached' => "Your image folder has reach its maximale size of %d MB.", //%d = max overall size
+    'B' => "B",
+    'KB' => "KB",
+    'MB' => "MB",
+    'GB' => "GB",
+    'TB' => "TB",
+    'total size' => "Total size",
+);
