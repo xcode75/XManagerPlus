@@ -1079,7 +1079,7 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `server` varchar(300) NOT NULL,
   `headertype` text NOT NULL,
   `port` int(10) NOT NULL DEFAULT '443',
-  `outside_port` int(10) NOT NULL,
+  `outside_port` varchar(10) NOT NULL,
   `protocol` text NOT NULL,
   `flow` text NOT NULL,
   `security` varchar(5) NOT NULL DEFAULT 'tls',
