@@ -1,6 +1,6 @@
 <?php
 
-$XManager['debug'] 			= true;
+$XManager['debug'] 			= false;
 
 $XManager['timeZone'] 	  	 = "PRC"; 
 $XManager['default_lang'] 	 = "en"; #en/zh-cn

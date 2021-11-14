@@ -20,13 +20,18 @@ $XManager['Clash_Profiles'] = [
             'enable'              => true,
             'ipv6'                => false,
             'listen'              => '0.0.0.0:53',
-            'enhanced-mode'       => 'fake-ip',
+			'default-nameserver'  => [
+                "114.114.114.114",
+                "8.8.8.8"
+			],	
+            'enhanced-mode'       => 'redir-host',
             'fake-ip-range'       => '198.18.0.1/16',
-            'nameserver'=>[
+            'nameserver'		  =>[
                 '114.114.114.114',
                 'tcp://223.5.5.5'
             ],
-            'fallback'=>[
+            'fallback'			  =>[
+			    '"8.8.8.8"',
                 'tls://223.5.5.5:853',
                 'https://223.5.5.5/dns-query'
             ],
@@ -139,7 +144,7 @@ $XManager['Clash_Profiles'] = [
             'enable'              => true,
             'ipv6'                => false,
             'listen'              => '0.0.0.0:53',
-            'enhanced-mode'       => 'fake-ip',
+            'enhanced-mode'       => 'redir-host',
             'fake-ip-range'       => '198.18.0.1/16',
             'nameserver'=>[
                 '114.114.114.114',
