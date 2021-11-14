@@ -1293,6 +1293,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `affclicks` int(20) NOT NULL DEFAULT '0',
   `ga_token` varchar(200) NOT NULL,
   `ga_enable` int(5) NOT NULL DEFAULT '0',
+  `allow_reset` tinyint(1) NOT NULL DEFAULT '1',
   `reset_count` int(3) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
