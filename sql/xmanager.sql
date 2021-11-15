@@ -259,7 +259,8 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
-('webapisafe', NULL),
+('login_bind_ip','0'),
+('webapisafe', '0'),
 ('wechat_url', NULL);
 
 -- --------------------------------------------------------
