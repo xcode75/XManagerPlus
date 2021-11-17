@@ -1,84 +1,89 @@
-	<script>
-	window.addEventListener('load', () => { 
-		$(".mlist li a").first().addClass("active");
-		$(".applist:first-child").addClass("active");
-		$(".applist li a").first().addClass("active");
-		$(".applist1 li a").first().addClass("active");
-		//$(".applist2 li a").first().addClass("active");
-		//$(".applist3 li a").first().addClass("active");
-		//$(".applist4 li a").first().addClass("active");
-		//$(".applist5 li a").first().addClass("active");
-		//$(".applist6 li a").first().addClass("active");
-		//$(".applist7 li a").first().addClass("active");
-		$(".configlist:first-child").addClass("active");	
-	}); 
-	</script>
-	<div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12">
-        <div class="card" >
-            <div class="card mlist ">
-			   </br></br>
-			   <ul class="nav nav-pills justify-content-center" id="rounded-pills-icon-tab" role="tablist">
-			    	{if $app->getAppCount(1) > 0}
-					<li class="nav-item ml-1 mr-1">
-						<a class="nav-link mb-2   text-center " id="rounded-pills-icon-A1-tab" data-toggle="pill" href="#rounded-pills-icon-A1" role="tab" aria-controls="rounded-pills-icon-A1" aria-selected="true" style="width:100px"><center><i class="fab fa-android fa-lg" style="font-size:30px"></i> </br></br> Android</center></a>
-                    </li> 
-					{/if}
-					{if $app->getAppCount(3) > 0}
-					<li class="nav-item ml-1 mr-1">
-						<a class="nav-link mb-2   text-center " id="rounded-pills-icon-A3-tab" data-toggle="pill" href="#rounded-pills-icon-A3" role="tab" aria-controls="rounded-pills-icon-A3" aria-selected="true" style="width:100px"><center><i class="fab fa-windows fa-lg" style="font-size:30px"></i> </br></br>Windows</center></a>
-					</li> 
-				    {/if}
-					{if $app->getAppCount(2) > 0}
-					<li class="nav-item ml-1 mr-1">
-						<a class="nav-link mb-2   text-center " id="rounded-pills-icon-A2-tab" data-toggle="pill" href="#rounded-pills-icon-A2" role="tab" aria-controls="rounded-pills-icon-A2" aria-selected="true" style="width:100px"><center><i class="fab fa-apple fa-lg" style="font-size:30px"></i> </br></br>IOS</center></a>
-					</li> 
-				    {/if}
-				    {if $app->getAppCount(4) > 0}
-					<li class="nav-item ml-1 mr-1">
-						<a class="nav-link mb-2   text-center " id="rounded-pills-icon-A4-tab" data-toggle="pill" href="#rounded-pills-icon-A4" role="tab" aria-controls="rounded-pills-icon-A4" aria-selected="true" style="width:100px"><center><i class="fas fa-apple-alt fa-lg" style="font-size:30px"></i> </br></br>Mac</center></a>
-					</li> 
-				    {/if}
-					{if $app->getAppCount(5) > 0}
-					<li class="nav-item ml-1 mr-1">
-						<a class="nav-link mb-2   text-center " id="rounded-pills-icon-A5-tab" data-toggle="pill" href="#rounded-pills-icon-A5" role="tab" aria-controls="rounded-pills-icon-A5" aria-selected="true" style="width:100px"><center><i class="fab fa-linux fa-lg" style="font-size:30px"></i> </br></br>Linux</center></a>
-					</li> 
-				    {/if}
-					{if $app->getAppCount(6) > 0}
-					<li class="nav-item ml-1 mr-1">
-						<a class="nav-link mb-2   text-center " id="rounded-pills-icon-A6-tab" data-toggle="pill" href="#rounded-pills-icon-A6" role="tab" aria-controls="rounded-pills-icon-A6" aria-selected="true" style="width:100px"><center><i class="fas fa-router fa-lg" style="font-size:30px"></i> </br></br>Router</center></a>
-					</li> 
-				    {/if}
-					{if $app->getAppCount(7) > 0}
-					<li class="nav-item ml-1 mr-1">
-						<a class="nav-link mb-2   text-center " id="rounded-pills-icon-A7-tab" data-toggle="pill" href="#rounded-pills-icon-A7" role="tab" aria-controls="rounded-pills-icon-A7" aria-selected="true" style="width:100px"><center><i class="fas fa-user-headset fa-lg" style="font-size:30px"></i> </br></br>Help</center></a>
-					</li> 
-					{/if}
-					{if $app->getAppCount(8) > 0}
-					<li class="nav-item ml-1 mr-1">
-						<a class="nav-link mb-2   text-center " id="rounded-pills-icon-A8-tab" data-toggle="pill" href="#rounded-pills-icon-A8" role="tab" aria-controls="rounded-pills-icon-A8" aria-selected="true" style="width:100px"><center><i class="fas fa-download fa-lg" style="font-size:30px"></i> </br></br>Others</center></a>
-					</li> 
-					{/if}
-                </ul>
-            </div>
-			
-			<div class="card tab-content apps" id="rounded-pills-icon-tabContent">	
-				{include file='user/apps/android.tpl'}
-				{include file='user/apps/windows.tpl'}
-				{include file='user/apps/ios.tpl'}
-				{include file='user/apps/mac.tpl'}
-				{include file='user/apps/linux.tpl'}
-				{include file='user/apps/router.tpl'}
-				{include file='user/apps/help.tpl'}
-				{include file='user/apps/others.tpl'}			
-			</div>
-        </div>
-    </div>
-	<style>				
-	.modal-body {
-		max-height: calc(70vh - 250px);
-		overflow-y: auto;
-	}
-	</style>	   
-    {include file='user/apps/modal.tpl'}
-	{include file='user/apps/script.tpl'}
-			
+!odMbo!
+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
+kPsO
