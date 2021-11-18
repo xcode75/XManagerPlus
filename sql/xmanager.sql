@@ -1106,11 +1106,6 @@ CREATE TABLE IF NOT EXISTS `user` (
   `allow_reset` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
-
-INSERT INTO `user` (`id`, `user_name`, `email`, `pass`, `passwd`, `method`, `uuid`, `mobile`, `t`, `u`, `d`, `transfer_enable`, `enable`, `reg_date`, `money`, `expire_time`, `reg_ip`, `speedlimit`, `connector`, `role`, `last_day_t`, `level`, `expire_in`, `remark`, `group`, `reset_day`, `reset_bandwidth`, `telegram_id`, `telegram_name`, `expire_notified`, `expire_notified_days`, `traffic_notified`, `traffic_notified_limit`, `afflink`, `notification`, `notify_expire`, `notify_usedup`, `ref_by`, `notice_status`, `notice_id`, `onlineips`, `affclicks`, `ga_token`, `ga_enable`, `reset_count`) VALUES
-(1, 'Admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'RbXjM0', 'aes-128-gcm', 'deaddac0-ed34-3a4c-a99c-60ffcbdbc292', '', 1636503571, 8479025, 913754509, 107374182400, 1, '2021-11-08 15:32:38', '0.00', 0, '127.0.0.1', 0, 2, 1, 0, 1, '2022-02-06 16:53:38', '', 0, 0, '0.00', NULL, NULL, 0, 0, 0, 0, 'HHOEbuNpVw', 1, 1, 1, 0, 0, NULL, NULL, 9, 'YR2TMFFMOJWZB4WI', 0, 0);
-
-
 CREATE TABLE IF NOT EXISTS `user_subscribe_log` (
   `id` int(11) unsigned NOT NULL,
   `user_name` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '用户名',
