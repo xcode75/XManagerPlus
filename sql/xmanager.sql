@@ -132,7 +132,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.1'),
+('latesversion', 'v4.11'),
 ('latesversioncontent', NULL),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -212,7 +212,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '1'),
-('version', 'v4.1'),
+('version', 'v4.11'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
@@ -944,7 +944,7 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `server` varchar(300) NOT NULL,
   `headertype` text NOT NULL,
   `port` int(10) NOT NULL DEFAULT '443',
-  `outside_port` varchar(10) NOT NULL  DEFAULT  NULL,
+  `outside_port` varchar(10) NULL  DEFAULT  NULL,
   `protocol` text NOT NULL,
   `flow` text NOT NULL,
   `security` varchar(5) NOT NULL DEFAULT 'tls',
@@ -1048,21 +1048,6 @@ CREATE TABLE IF NOT EXISTS `telegram_session` (
   `session_content` text,
   `datetime` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `telegram_tasks` (
-  `id` int(11) unsigned NOT NULL,
-  `type` int(8) NOT NULL,
-  `status` int(2) NOT NULL DEFAULT '0',
-  `chatid` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0' ,
-  `messageid` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0' ,
-  `content` text COLLATE utf8mb4_unicode_ci,
-  `process` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `userid` int(11) NOT NULL DEFAULT '0',
-  `tguserid` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
-  `executetime` bigint(20) NOT NULL,
-  `datetime` bigint(20) NOT NULL COMMENT
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 CREATE TABLE IF NOT EXISTS `tmp_price` (
@@ -1357,8 +1342,6 @@ ALTER TABLE `setup`
 ALTER TABLE `telegram_session`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 
-ALTER TABLE `telegram_tasks`
-  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
