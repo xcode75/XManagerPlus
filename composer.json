@@ -39,8 +39,7 @@
         "geoip2/geoip2": "*",
         "league/omnipay": "^3",
         "liushoukun/omnipay-alipay": "*",
-        "omnipay/paypal": "*",
-        "financialplugins/omnipay-coinpayments": "*"
+        "omnipay/paypal": "*"
     },
     "autoload": {
         "psr-4": {

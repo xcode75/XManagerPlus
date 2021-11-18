@@ -132,7 +132,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.0'),
+('latesversion', 'v4.1'),
 ('latesversioncontent', NULL),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -212,7 +212,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '1'),
-('version', 'v4.0'),
+('version', 'v4.1'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
@@ -1067,7 +1067,8 @@ CREATE TABLE IF NOT EXISTS `telegram_tasks` (
 
 CREATE TABLE IF NOT EXISTS `tmp_price` (
   `price` varchar(255) NOT NULL,
-  `oid` varchar(255) NOT NULL
+  `oid` varchar(255) NOT NULL,
+  `uid` INT(12) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
