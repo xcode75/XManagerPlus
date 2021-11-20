@@ -1053,7 +1053,8 @@ CREATE TABLE IF NOT EXISTS `telegram_session` (
 
 CREATE TABLE IF NOT EXISTS `tmp_price` (
   `price` varchar(255) NOT NULL,
-  `oid` varchar(255) NOT NULL
+  `oid` varchar(255) NOT NULL,
+  `uid` int(12) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
