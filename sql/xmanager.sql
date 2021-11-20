@@ -9,8 +9,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `accountname` text NOT NULL,
   `accountid` text NOT NULL,
   `accountpassword` text NOT NULL,
-  `allow_check` varchar(1) NOT NULL DEFAULT '0',
-  `imagepath` text
+  `allow_check` varchar(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
@@ -133,7 +132,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.0'),
+('latesversion', 'v4.11'),
 ('latesversioncontent', NULL),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -213,7 +212,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '1'),
-('version', 'v4.0'),
+('version', 'v4.11'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
