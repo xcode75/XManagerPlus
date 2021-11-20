@@ -132,7 +132,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.11'),
+('latesversion', 'v4.0'),
 ('latesversioncontent', NULL),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -212,7 +212,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '1'),
-('version', 'v4.11'),
+('version', 'v4.0'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
@@ -944,7 +944,7 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `server` varchar(300) NOT NULL,
   `headertype` text NOT NULL,
   `port` int(10) NOT NULL DEFAULT '443',
-  `outside_port` varchar(10) NULL  DEFAULT  NULL,
+  `outside_port` varchar(10) NOT NULL,
   `protocol` text NOT NULL,
   `flow` text NOT NULL,
   `security` varchar(5) NOT NULL DEFAULT 'tls',
@@ -972,7 +972,9 @@ CREATE TABLE IF NOT EXISTS `servers` (
 
 
 INSERT INTO `servers` (`id`, `name`, `type`, `server`, `headertype`, `port`, `outside_port`, `protocol`, `flow`, `security`, `xhost`, `xpath`, `info`, `status`, `rate`, `level`, `speedlimit`, `connector`, `bandwidth`, `bandwidth_limit`, `bandwidthlimit_resetday`, `heartbeat`, `node_ip`, `group`, `online`, `sort`, `method`, `mu_only`, `allowinsecure`, `rserver`) VALUES
-(1, 'Expired', 0, '8.8.8.8', '', 443, 0, '', '', 'tls', '', '', 'GB', NULL, 0, -1, 0, 0, 0, 0, 0, 0, '127.0.0.1', 0, 0, 1, 'aes-128-gcm', 1, 0, NULL);
+(1, 'Expired', 0, '8.8.8.8', '', 443, 0, '', '', 'tls', '', '', 'GB', NULL, 0, -1, 0, 0, 0, 0, 0, 0, '127.0.0.1', 0, 0, 1, 'aes-128-gcm', 1, 0, NULL),
+(2, 'VULTR-US-A', 1, 'vultr.gbxcloud.com', 'none', 8443, 0, 'ws', 'none', 'tls', 'vultr.gbxcloud.com', '/', 'US', NULL, 1, 1, 0, 0, 920840589, 0, 0, 1636622938, '144.202.124.139', 0, 1, 4, 'aes-128-gcm', 1, 1, NULL);
+
 
 CREATE TABLE IF NOT EXISTS `server_info` (
   `id` int(11) NOT NULL,
@@ -1049,11 +1051,9 @@ CREATE TABLE IF NOT EXISTS `telegram_session` (
   `datetime` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
 CREATE TABLE IF NOT EXISTS `tmp_price` (
   `price` varchar(255) NOT NULL,
-  `oid` varchar(255) NOT NULL,
-  `uid` INT(12) NOT NULL
+  `oid` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
@@ -1105,6 +1105,11 @@ CREATE TABLE IF NOT EXISTS `user` (
   `reset_count` int(3) NOT NULL DEFAULT '0',
   `allow_reset` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `user` (`id`, `user_name`, `email`, `pass`, `passwd`, `method`, `uuid`, `mobile`, `t`, `u`, `d`, `transfer_enable`, `enable`, `reg_date`, `money`, `expire_time`, `reg_ip`, `speedlimit`, `connector`, `role`, `last_day_t`, `level`, `expire_in`, `remark`, `group`, `reset_day`, `reset_bandwidth`, `telegram_id`, `telegram_name`, `expire_notified`, `expire_notified_days`, `traffic_notified`, `traffic_notified_limit`, `afflink`, `notification`, `notify_expire`, `notify_usedup`, `ref_by`, `notice_status`, `notice_id`, `onlineips`, `affclicks`, `ga_token`, `ga_enable`, `reset_count`) VALUES
+(1, 'Admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'RbXjM0', 'aes-128-gcm', 'deaddac0-ed34-3a4c-a99c-60ffcbdbc292', '', 1636503571, 8479025, 913754509, 107374182400, 1, '2021-11-08 15:32:38', '0.00', 0, '127.0.0.1', 0, 2, 1, 0, 1, '2022-02-06 16:53:38', '', 0, 0, '0.00', NULL, NULL, 0, 0, 0, 0, 'HHOEbuNpVw', 1, 1, 1, 0, 0, NULL, NULL, 9, 'YR2TMFFMOJWZB4WI', 0, 0);
+
 
 CREATE TABLE IF NOT EXISTS `user_subscribe_log` (
   `id` int(11) unsigned NOT NULL,
@@ -1244,10 +1249,6 @@ ALTER TABLE `telegram_session`
   ADD PRIMARY KEY (`id`);
 
 
-ALTER TABLE `telegram_tasks`
-  ADD PRIMARY KEY (`id`);
-
-
 ALTER TABLE `tmp_price`
   ADD PRIMARY KEY (`price`);
 
@@ -1336,7 +1337,6 @@ ALTER TABLE `setup`
 
 ALTER TABLE `telegram_session`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
-
 
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
