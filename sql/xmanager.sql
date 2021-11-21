@@ -1693,3 +1693,5 @@ ALTER TABLE `user_token`
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
+ALTER TABLE `onlineip` 
+	MODIFY `id` INT(11) NOT NULL AUTO_INCREMENT;
