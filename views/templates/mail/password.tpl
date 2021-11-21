@@ -1,130 +1,123 @@
-
-<!DOCTYPE html>
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700" rel="stylesheet" media="screen">
-    <style>
-      .hover-underline:hover {
-        text-decoration: underline !important;
-      }
-
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-      @keyframes ping {
-
-        75%,
-        100% {
-          transform: scale(2);
-          opacity: 0;
-        }
-      }
-
-      @keyframes pulse {
-        50% {
-          opacity: .5;
-        }
-      }
-
-      @keyframes bounce {
-
-        0%,
-        100% {
-          transform: translateY(-25%);
-          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-        }
-
-        50% {
-          transform: none;
-          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-        }
-      }
-
-      @media (max-width: 600px) {
-        .sm-px-24 {
-          padding-left: 24px !important;
-          padding-right: 24px !important;
-        }
-
-        .sm-py-32 {
-          padding-top: 32px !important;
-          padding-bottom: 32px !important;
-        }
-
-        .sm-w-full {
-          width: 100% !important;
-        }
-      }
-    </style>
-  </head>
-
-  <body style="margin: 0; padding: 0; width: 100%; word-break: break-word; -webkit-font-smoothing: antialiased; --bg-opacity: 1; background-color: #eceff1; background-color: rgba(236, 239, 241, var(--bg-opacity));">
-   <div role="article" aria-roledescription="email" aria-label="Reset your Password" lang="en">
-      <table style="font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-        <tr>
-          <td align="center" style="--bg-opacity: 1; background-color: #ffffff; background-color: #ffffff; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif;" bgcolor="rgba(236, 239, 241, var(--bg-opacity))">
-            <table class="sm-w-full" style="font-family: 'Montserrat',Arial,sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-              <tr>
-                <td align="center" class="sm-px-24" style="font-family: 'Montserrat',Arial,sans-serif;">
-                  <table style="font-family: 'Montserrat',Arial,sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td class="sm-px-24" style="--bg-opacity: 1; background-color: #ffffff; background-color: rgba(255, 255, 255, var(--bg-opacity)); border-radius: 4px; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; font-size: 14px; line-height: 24px; padding: 48px; text-align: left; --text-opacity: 1; color: #626262; color: rgba(98, 98, 98, var(--text-opacity));" bgcolor="rgba(255, 255, 255, var(--bg-opacity))" align="left">
-                        <p style="font-weight: 600; font-size: 18px; margin-bottom: 0;">{$lang->get('Hello')}</p>
-                        <p style="font-weight: 700; font-size: 20px; margin-top: 0; --text-opacity: 1; color: #ff5850; color: rgba(255, 88, 80, var(--text-opacity));">{$Username}!</p>
-                        <p style="margin: 0 0 24px;">
-                          {$lang->get('Passnote1')}
-                          <span style="font-weight: 600;">{$Config['appName']}</span> {$lang->get('Passnote2')} -
-                          IP - <span style="font-weight: 600;">{$requestip}</span> .
-                        </p>
-                        <p style="margin: 0 0 24px;">{$lang->get('Uselink')}.</p>
-                        <a href="{$resetUrl}" style="display: block; font-size: 14px; line-height: 100%; margin-bottom: 24px; --text-opacity: 1; color: {$Config['app_color']}; color: {$Config['app_color']}; text-decoration: none;">{$resetUrl}</a>
-                        <table style="font-family: 'Montserrat',Arial,sans-serif;" cellpadding="0" cellspacing="0" role="presentation">
-                          <tr>
-                            <td style="mso-padding-alt: 16px 24px; --bg-opacity: 1; background-color: {$Config['app_color']}; background-color: {$Config['app_color']}; border-radius: 4px; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif;" bgcolor="rgba(115, 103, 240, var(--bg-opacity))">
-                              <a href="{$resetUrl}" style="display: block; font-weight: 600; font-size: 14px; line-height: 100%; padding: 16px 24px; --text-opacity: 1; color: #ffffff; color: rgba(255, 255, 255, var(--text-opacity)); text-decoration: none;">{$lang->get('RPass')} &rarr;</a>
-                            </td>
-                          </tr>
-                        </table>
-                        <p style="margin: 24px 0;">
-                          <span style="font-weight: 600;">{$lang->get('verifynote4')}:</span> 
-							{$lang->get('expireMail_1')} {$expire} {$lang->get('expireMail_2')}.
-                        </p>
-                        <p style="margin: 0;">
-                          {$lang->get('ignoreMail')}.
-                        </p>
-                        <table style="font-family: 'Montserrat',Arial,sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                          <tr>
-                            <td style="font-family: 'Montserrat',Arial,sans-serif; padding-top: 32px; padding-bottom: 32px;">
-                              <div style="--bg-opacity: 1; background-color: #eceff1; background-color: rgba(236, 239, 241, var(--bg-opacity)); height: 1px; line-height: 1px;">&zwnj;</div>
-                            </td>
-                          </tr>
-                        </table>
-                        <p style="margin: 0 0 16px;">{$lang->get('ThanksMail_2')}, <br>{$Config['appName']|upper}</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-family: 'Montserrat',Arial,sans-serif; height: 20px;" height="20"></td>
-                    </tr>
-                    <tr>
-                      <td style="font-family: 'Montserrat',Arial,sans-serif; height: 16px;" height="16"></td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </body>
-
-</html>
+!odMbo!
+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

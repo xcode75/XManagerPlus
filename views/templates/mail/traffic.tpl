@@ -1,120 +1,97 @@
-
-<!DOCTYPE html>
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700" rel="stylesheet" media="screen">
-    <style>
-      .hover-underline:hover {
-        text-decoration: underline !important;
-      }
-
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-      @keyframes ping {
-
-        75%,
-        100% {
-          transform: scale(2);
-          opacity: 0;
-        }
-      }
-
-      @keyframes pulse {
-        50% {
-          opacity: .5;
-        }
-      }
-
-      @keyframes bounce {
-
-        0%,
-        100% {
-          transform: translateY(-25%);
-          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-        }
-
-        50% {
-          transform: none;
-          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-        }
-      }
-
-      @media (max-width: 600px) {
-        .sm-leading-32 {
-          line-height: 32px !important;
-        }
-
-        .sm-px-24 {
-          padding-left: 24px !important;
-          padding-right: 24px !important;
-        }
-
-        .sm-py-32 {
-          padding-top: 32px !important;
-          padding-bottom: 32px !important;
-        }
-
-        .sm-w-full {
-          width: 100% !important;
-        }
-      }
-    </style>
-  </head>
-
-  <body style="margin: 0; padding: 0; width: 100%; word-break: break-word; -webkit-font-smoothing: antialiased; --bg-opacity: 1; background-color: #eceff1; background-color: rgba(236, 239, 241, var(--bg-opacity));">
-    
-    <div role="article" aria-roledescription="email" aria-label="" >
-      <table style="font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-        <tr>
-          <td align="center" style="--bg-opacity: 1; background-color: #ffffff; background-color: #ffffff; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif;" bgcolor="rgba(236, 239, 241, var(--bg-opacity))">
-            <table class="sm-w-full" style="font-family: 'Montserrat',Arial,sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-              <tr>
-                <td align="center" class="sm-px-24" style="font-family: 'Montserrat',Arial,sans-serif;">
-                  <table style="font-family: 'Montserrat',Arial,sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                    <tr>
-                      <td class="sm-px-24" style="--bg-opacity: 1; background-color: #ffffff; background-color: rgba(255, 255, 255, var(--bg-opacity)); border-radius: 4px; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; font-size: 14px; line-height: 24px; padding: 48px; text-align: left; --text-opacity: 1; color: #626262; color: rgba(98, 98, 98, var(--text-opacity));" bgcolor="rgba(255, 255, 255, var(--bg-opacity))" align="left">
-                        <p style="font-weight: 600; font-size: 18px; margin-bottom: 0;">{$lang->get('Hello')}</p>
-                        <p style="font-weight: 700; font-size: 20px; margin-top: 0; --text-opacity: 1; color: #ff5850; color: rgba(255, 88, 80, var(--text-opacity));">{$UserName}!</p>
-                        <p style="margin: 0 0 24px;">
-                          {$TrafficMessage}
-                        </p>
-						<p style="margin: 0 0 16px;">{$lang->get('ToTraffic')} : {$ToTraffic}</p>
-						<p style="margin: 0 0 16px;">{$lang->get('UTraffic')} : {$UsedT}</p>
-						<p style="margin: 0 0 16px;">{$lang->get('PExpire')} : {$PExpire} </p>
-                        <table style="font-family: 'Montserrat',Arial,sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                          <tr>
-                            <td style="font-family: 'Montserrat',Arial,sans-serif; padding-top: 32px; padding-bottom: 32px;">
-                              <div style="--bg-opacity: 1; background-color: #eceff1; background-color: rgba(236, 239, 241, var(--bg-opacity)); height: 1px; line-height: 1px;">&zwnj;</div>
-                            </td>
-                          </tr>
-                        </table>
-                        <p style="margin: 0 0 16px;">{$lang->get('ThanksMail_2')}, <br><b>{$Config['appName']|upper}</b></p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="font-family: 'Montserrat',Arial,sans-serif; height: 20px;" height="20"></td>
-                    </tr>
-                    <tr>
-                      <td style="font-family: 'Montserrat',Arial,sans-serif; height: 16px;" height="16"></td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </body>
-
-</html>
+!odMbo!
+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
