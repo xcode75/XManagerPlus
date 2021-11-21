@@ -1040,7 +1040,7 @@ CREATE TABLE IF NOT EXISTS `payout` (
   `id` int(12) NOT NULL,
   `userid` int(12) NOT NULL,
   `amount` decimal(12,2) NOT NULL DEFAULT '0.00',
-  `account` varchar(120) CHARACTER SET utf8 DEFAULT NULL,
+  `account` varchar(250) CHARACTER SET utf8 DEFAULT NULL,
   `method` int(5) NOT NULL DEFAULT '1',
   `status` int(11) DEFAULT NULL,
   `datetime` bigint(20) DEFAULT NULL
@@ -1300,7 +1300,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `aff_completed` decimal(12,2) NOT NULL DEFAULT '0.00',
   `aff_pending` decimal(12,2) NOT NULL DEFAULT '0.00',
   `aff_balance` decimal(12,2) NOT NULL DEFAULT '0.00',
-  `aff_account` varchar(50) DEFAULT NULL,
+  `aff_account` varchar(250) DEFAULT NULL,
   `aff_with_mode` int(2) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
