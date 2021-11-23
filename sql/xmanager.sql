@@ -1,30 +1,7 @@
--- phpMyAdmin SQL Dump
--- version 4.4.15.10
--- https://www.phpmyadmin.net
---
--- Host: localhost
--- Generation Time: Nov 21, 2021 at 08:29 PM
--- Server version: 5.5.68-MariaDB
--- PHP Version: 7.4.22
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `xmanager`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `accounts`
---
 
 CREATE TABLE IF NOT EXISTS `accounts` (
   `id` int(20) NOT NULL,
@@ -32,15 +9,9 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `accountname` text NOT NULL,
   `accountid` text NOT NULL,
   `accountpassword` text NOT NULL,
-  `imagepath` text,
-  `allow_check` varchar(1) NOT NULL DEFAULT '0'
+  `allow_check` TINYINT(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `alive_ip`
---
 
 CREATE TABLE IF NOT EXISTS `alive_ip` (
   `id` bigint(20) NOT NULL,
@@ -50,11 +21,6 @@ CREATE TABLE IF NOT EXISTS `alive_ip` (
   `datetime` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `captcha`
---
 
 CREATE TABLE IF NOT EXISTS `captcha` (
   `id` bigint(20) NOT NULL,
@@ -63,11 +29,6 @@ CREATE TABLE IF NOT EXISTS `captcha` (
   `expire` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `commission`
---
 
 CREATE TABLE IF NOT EXISTS `commission` (
   `id` bigint(20) NOT NULL,
@@ -79,20 +40,13 @@ CREATE TABLE IF NOT EXISTS `commission` (
   `datetime` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `config`
---
 
 CREATE TABLE IF NOT EXISTS `config` (
   `name` varchar(255) NOT NULL,
   `value` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
---
--- Dumping data for table `config`
---
+
 
 INSERT INTO `config` (`name`, `value`) VALUES
 ('accessdenied', '0'),
@@ -178,8 +132,8 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.12'),
-('latesversioncontent', '- Fix Amin Add User Package</br>- Fix Server QrCode not showing'),
+('latesversion', 'v4.13'),
+('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
 ('login_bind_ip', '0'),
@@ -261,18 +215,14 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v4.12'),
+('version', 'v4.13'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
 ('webapisafe', '0'),
 ('wechat_url', '');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `country`
---
 
 CREATE TABLE IF NOT EXISTS `country` (
   `id` int(11) NOT NULL,
@@ -284,9 +234,7 @@ CREATE TABLE IF NOT EXISTS `country` (
   `code` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=245 DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `country`
---
+
 
 INSERT INTO `country` (`id`, `cnname`, `name`, `fullname`, `alpha2`, `alpha3`, `code`) VALUES
 (1, '阿富汗', 'Afghanistan', 'the Islamic Republic of Afghanistan', 'AF', 'AFG', 4),
@@ -534,12 +482,6 @@ INSERT INTO `country` (`id`, `cnname`, `name`, `fullname`, `alpha2`, `alpha3`, `
 (243, '赞比亚', 'Zambia', 'the Republic of Zambia', 'ZM', 'ZMB', 894),
 (244, '津巴布韦', 'Zimbabwe', 'the Republic of Zimbabwe', 'ZW', 'ZWE', 716);
 
--- --------------------------------------------------------
-
---
--- Table structure for table `coupon`
---
-
 CREATE TABLE IF NOT EXISTS `coupon` (
   `id` bigint(20) NOT NULL,
   `name` varchar(25) DEFAULT NULL,
@@ -553,11 +495,6 @@ CREATE TABLE IF NOT EXISTS `coupon` (
   `status` int(2) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `currency`
---
 
 CREATE TABLE IF NOT EXISTS `currency` (
   `id` int(11) NOT NULL,
@@ -569,9 +506,6 @@ CREATE TABLE IF NOT EXISTS `currency` (
   `updatetime` bigint(20) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `currency`
---
 
 INSERT INTO `currency` (`id`, `name`, `code`, `symbol`, `rate`, `status`, `updatetime`) VALUES
 (1, 'United States Dollars', 'USD', '$', '0.16', 1, 1637452802),
@@ -585,11 +519,6 @@ INSERT INTO `currency` (`id`, `name`, `code`, `symbol`, `rate`, `status`, `updat
 (9, 'Russian Rubles', 'RUB', '₽', '11.48', 1, 1637452802),
 (10, 'New Taiwan dollars', 'TWD', 'NT$', '4.36', 1, 1637452802);
 
--- --------------------------------------------------------
-
---
--- Table structure for table `email_verify`
---
 
 CREATE TABLE IF NOT EXISTS `email_verify` (
   `id` bigint(20) NOT NULL,
@@ -599,11 +528,7 @@ CREATE TABLE IF NOT EXISTS `email_verify` (
   `expire_in` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `isocodes`
---
 
 CREATE TABLE IF NOT EXISTS `isocodes` (
   `id` int(11) NOT NULL,
@@ -615,9 +540,6 @@ CREATE TABLE IF NOT EXISTS `isocodes` (
   `phonecode` int(5) NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=254 DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `isocodes`
---
 
 INSERT INTO `isocodes` (`id`, `iso`, `name`, `nicename`, `iso3`, `numcode`, `phonecode`) VALUES
 (1, 'AF', 'AFGHANISTAN', 'Afghanistan', 'AFG', 4, 93),
@@ -874,11 +796,6 @@ INSERT INTO `isocodes` (`id`, `iso`, `name`, `nicename`, `iso3`, `numcode`, `pho
 (252, 'SX', 'SINT MAARTEN', 'Sint Maarten', 'SXM', 534, 1),
 (253, 'SS', 'SOUTH SUDAN', 'South Sudan', 'SSD', 728, 211);
 
--- --------------------------------------------------------
-
---
--- Table structure for table `link`
---
 
 CREATE TABLE IF NOT EXISTS `link` (
   `id` bigint(20) NOT NULL,
@@ -893,11 +810,6 @@ CREATE TABLE IF NOT EXISTS `link` (
   `method` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `login_ip`
---
 
 CREATE TABLE IF NOT EXISTS `login_ip` (
   `id` bigint(20) NOT NULL,
@@ -907,11 +819,6 @@ CREATE TABLE IF NOT EXISTS `login_ip` (
   `type` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `mobile_verify`
---
 
 CREATE TABLE IF NOT EXISTS `mobile_verify` (
   `id` bigint(20) NOT NULL,
@@ -920,11 +827,6 @@ CREATE TABLE IF NOT EXISTS `mobile_verify` (
   `expire_in` bigint(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `notice`
---
 
 CREATE TABLE IF NOT EXISTS `notice` (
   `id` int(11) NOT NULL,
@@ -935,12 +837,6 @@ CREATE TABLE IF NOT EXISTS `notice` (
   `markdown_cn` longtext
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `onlineip`
---
-
 CREATE TABLE IF NOT EXISTS `onlineip` (
   `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
@@ -949,11 +845,7 @@ CREATE TABLE IF NOT EXISTS `onlineip` (
   `datetime` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `orders`
---
 
 CREATE TABLE IF NOT EXISTS `orders` (
   `id` bigint(20) NOT NULL,
@@ -989,11 +881,6 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `exrate` decimal(12,2) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `package`
---
 
 CREATE TABLE IF NOT EXISTS `package` (
   `id` bigint(20) NOT NULL,
@@ -1016,11 +903,6 @@ CREATE TABLE IF NOT EXISTS `package` (
   `level` int(5) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `password_reset`
---
 
 CREATE TABLE IF NOT EXISTS `password_reset` (
   `id` int(11) NOT NULL,
@@ -1030,27 +912,17 @@ CREATE TABLE IF NOT EXISTS `password_reset` (
   `expire_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `payout`
---
 
 CREATE TABLE IF NOT EXISTS `payout` (
   `id` int(12) NOT NULL,
   `userid` int(12) NOT NULL,
   `amount` decimal(12,2) NOT NULL DEFAULT '0.00',
-  `account` varchar(250) CHARACTER SET utf8 DEFAULT NULL,
+  `account` varchar(120) CHARACTER SET utf8 DEFAULT NULL,
   `method` int(5) NOT NULL DEFAULT '1',
   `status` int(11) DEFAULT NULL,
   `datetime` bigint(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `rule_list`
---
 
 CREATE TABLE IF NOT EXISTS `rule_list` (
   `id` int(11) NOT NULL,
@@ -1059,9 +931,6 @@ CREATE TABLE IF NOT EXISTS `rule_list` (
   `type` int(11) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `rule_list`
---
 
 INSERT INTO `rule_list` (`id`, `name`, `regex`, `type`) VALUES
 (1, '360-1', '(.*\\.||)(360|360safe|so|360totalsecurity|qihoo|qhimg)\\.(cn|com)', 1),
@@ -1073,11 +942,6 @@ INSERT INTO `rule_list` (`id`, `name`, `regex`, `type`) VALUES
 (7, '360-2', '(.+.|^)(360|so).(cn|com)', 1),
 (8, 'Baidu-Nav', '(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com', 1);
 
--- --------------------------------------------------------
-
---
--- Table structure for table `rule_log`
---
 
 CREATE TABLE IF NOT EXISTS `rule_log` (
   `id` bigint(20) NOT NULL,
@@ -1088,11 +952,6 @@ CREATE TABLE IF NOT EXISTS `rule_log` (
   `status` int(2) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `servers`
---
 
 CREATE TABLE IF NOT EXISTS `servers` (
   `id` int(11) NOT NULL,
@@ -1127,18 +986,10 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `rserver` varchar(300) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `servers`
---
 
 INSERT INTO `servers` (`id`, `name`, `type`, `server`, `headertype`, `port`, `outside_port`, `protocol`, `flow`, `security`, `xhost`, `xpath`, `info`, `status`, `rate`, `level`, `speedlimit`, `connector`, `bandwidth`, `bandwidth_limit`, `bandwidthlimit_resetday`, `heartbeat`, `node_ip`, `group`, `online`, `sort`, `method`, `mu_only`, `allowinsecure`, `rserver`) VALUES
 (1, 'Expired/过期', 0, '8.8.8.8', '', 443, '0', '', '', 'tls', '', '', 'GB', NULL, 0, -1, 0, 0, 0, 0, 0, 0, '127.0.0.1', 0, 0, 1, 'aes-128-gcm', 1, 0, NULL);
 
--- --------------------------------------------------------
-
---
--- Table structure for table `server_info`
---
 
 CREATE TABLE IF NOT EXISTS `server_info` (
   `id` int(11) NOT NULL,
@@ -1148,11 +999,6 @@ CREATE TABLE IF NOT EXISTS `server_info` (
   `log_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `server_online_log`
---
 
 CREATE TABLE IF NOT EXISTS `server_online_log` (
   `id` int(11) NOT NULL,
@@ -1161,11 +1007,6 @@ CREATE TABLE IF NOT EXISTS `server_online_log` (
   `log_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `setup`
---
 
 CREATE TABLE IF NOT EXISTS `setup` (
   `id` int(25) NOT NULL,
@@ -1180,9 +1021,7 @@ CREATE TABLE IF NOT EXISTS `setup` (
   `icon` text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `setup`
---
+
 
 INSERT INTO `setup` (`id`, `title`, `type`, `content`, `content_cn`, `datetime`, `status`, `url`, `link`, `icon`) VALUES
 (1, 'ClashForAndroid', '1', '', '', 1635763183, 1, '/download/Clash.apk', 'config=1', 'xpanel xpanel-clash'),
@@ -1218,12 +1057,6 @@ INSERT INTO `setup` (`id`, `title`, `type`, `content`, `content_cn`, `datetime`,
 (31, NULL, '8', NULL, NULL, NULL, 0, NULL, NULL, ''),
 (32, NULL, '8', NULL, NULL, NULL, 0, NULL, NULL, '');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `telegram_session`
---
-
 CREATE TABLE IF NOT EXISTS `telegram_session` (
   `id` bigint(20) NOT NULL,
   `user_id` bigint(20) NOT NULL,
@@ -1232,11 +1065,6 @@ CREATE TABLE IF NOT EXISTS `telegram_session` (
   `datetime` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `tmp_price`
---
 
 CREATE TABLE IF NOT EXISTS `tmp_price` (
   `price` varchar(255) NOT NULL,
@@ -1244,11 +1072,6 @@ CREATE TABLE IF NOT EXISTS `tmp_price` (
   `uid` int(12) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `user`
---
 
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL,
@@ -1300,32 +1123,22 @@ CREATE TABLE IF NOT EXISTS `user` (
   `aff_completed` decimal(12,2) NOT NULL DEFAULT '0.00',
   `aff_pending` decimal(12,2) NOT NULL DEFAULT '0.00',
   `aff_balance` decimal(12,2) NOT NULL DEFAULT '0.00',
-  `aff_account` varchar(250) DEFAULT NULL,
+  `aff_account` varchar(50) DEFAULT NULL,
   `aff_with_mode` int(2) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `user_subscribe_log`
---
+CREATE TABLE `user_subscribe_log` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `user_name` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `email` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subscribe_type` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `request_ip` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `request_time` datetime NOT NULL,
+  `request_user_agent` text COLLATE utf8mb4_unicode_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `user_subscribe_log` (
-  `id` int(11) unsigned NOT NULL,
-  `user_name` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '用户名',
-  `user_id` int(11) NOT NULL COMMENT '用户 ID',
-  `email` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '用户邮箱',
-  `subscribe_type` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '获取的订阅类型',
-  `request_ip` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '请求 IP',
-  `request_time` datetime NOT NULL COMMENT '请求时间',
-  `request_user_agent` text COLLATE utf8mb4_unicode_ci COMMENT '请求 UA 信息'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用户订阅日志';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user_token`
---
 
 CREATE TABLE IF NOT EXISTS `user_token` (
   `id` int(11) NOT NULL,
@@ -1335,11 +1148,6 @@ CREATE TABLE IF NOT EXISTS `user_token` (
   `expire_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `user_traffic_log`
---
 
 CREATE TABLE IF NOT EXISTS `user_traffic_log` (
   `id` int(11) NOT NULL,
@@ -1352,344 +1160,196 @@ CREATE TABLE IF NOT EXISTS `user_traffic_log` (
   `log_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `accounts`
---
 ALTER TABLE `accounts`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
---
--- Indexes for table `alive_ip`
---
 ALTER TABLE `alive_ip`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `captcha`
---
 ALTER TABLE `captcha`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
---
--- Indexes for table `commission`
---
+
 ALTER TABLE `commission`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
---
--- Indexes for table `config`
---
+
 ALTER TABLE `config`
   ADD UNIQUE KEY `name` (`name`);
 
---
--- Indexes for table `country`
---
+
 ALTER TABLE `country`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
---
--- Indexes for table `coupon`
---
+
 ALTER TABLE `coupon`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `currency`
---
+
 ALTER TABLE `currency`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `email_verify`
---
+
 ALTER TABLE `email_verify`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `isocodes`
---
+
 ALTER TABLE `isocodes`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `link`
---
+
 ALTER TABLE `link`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
---
--- Indexes for table `login_ip`
---
 ALTER TABLE `login_ip`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `mobile_verify`
---
 ALTER TABLE `mobile_verify`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `notice`
---
 ALTER TABLE `notice`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `onlineip`
---
 ALTER TABLE `onlineip`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `orders`
---
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `package`
---
 ALTER TABLE `package`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `password_reset`
---
 ALTER TABLE `password_reset`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `payout`
---
 ALTER TABLE `payout`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `rule_list`
---
 ALTER TABLE `rule_list`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `rule_log`
---
+
 ALTER TABLE `rule_log`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `servers`
---
+
 ALTER TABLE `servers`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
---
--- Indexes for table `server_info`
---
 ALTER TABLE `server_info`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `server_online_log`
---
 ALTER TABLE `server_online_log`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `setup`
---
 ALTER TABLE `setup`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `telegram_session`
---
 ALTER TABLE `telegram_session`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `tmp_price`
---
 ALTER TABLE `tmp_price`
   ADD PRIMARY KEY (`price`);
 
---
--- Indexes for table `user`
---
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `user_subscribe_log`
---
 ALTER TABLE `user_subscribe_log`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `user_token`
---
 ALTER TABLE `user_token`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `user_traffic_log`
---
 ALTER TABLE `user_traffic_log`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `accounts`
---
 ALTER TABLE `accounts`
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `alive_ip`
---
+
 ALTER TABLE `alive_ip`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `captcha`
---
+
 ALTER TABLE `captcha`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `commission`
---
+
 ALTER TABLE `commission`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `country`
---
+
 ALTER TABLE `country`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=245;
---
--- AUTO_INCREMENT for table `coupon`
---
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
 ALTER TABLE `coupon`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `currency`
---
+
 ALTER TABLE `currency`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
---
--- AUTO_INCREMENT for table `email_verify`
---
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
 ALTER TABLE `email_verify`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `isocodes`
---
+
 ALTER TABLE `isocodes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=254;
---
--- AUTO_INCREMENT for table `link`
---
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
 ALTER TABLE `link`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `login_ip`
---
+
 ALTER TABLE `login_ip`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `mobile_verify`
---
+
 ALTER TABLE `mobile_verify`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `notice`
---
+
 ALTER TABLE `notice`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `orders`
---
+
 ALTER TABLE `orders`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `package`
---
+
 ALTER TABLE `package`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `password_reset`
---
+
 ALTER TABLE `password_reset`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `payout`
---
+
 ALTER TABLE `payout`
   MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `rule_list`
---
+
 ALTER TABLE `rule_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
---
--- AUTO_INCREMENT for table `rule_log`
---
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
 ALTER TABLE `rule_log`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `servers`
---
+
 ALTER TABLE `servers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `server_info`
---
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
 ALTER TABLE `server_info`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `server_online_log`
---
+
 ALTER TABLE `server_online_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `setup`
---
+
 ALTER TABLE `setup`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=33;
---
--- AUTO_INCREMENT for table `telegram_session`
---
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
 ALTER TABLE `telegram_session`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `user`
---
+
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `user_subscribe_log`
---
+
 ALTER TABLE `user_subscribe_log`
   MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `user_token`
---
+
 ALTER TABLE `user_token`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `user_traffic_log`
---
+
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
