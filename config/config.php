@@ -1,9 +1,9 @@
 <?php
 
-$XManager['debug'] 			= true;
+$XManager['debug'] 			= false;
 
 $XManager['timeZone'] 	  	 = "PRC"; 
-$XManager['default_lang'] 	 = "en"; #en/zh-cn
+$XManager['default_lang'] 	 = "zh-cn"; #en/zh-cn
 
 $XManager['db_driver']    	 = 'mysql';   
 $XManager['db_host']      	 = 'localhost';
