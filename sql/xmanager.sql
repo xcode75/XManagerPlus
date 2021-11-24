@@ -1111,7 +1111,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `notification` int(3) NOT NULL DEFAULT '1',
   `notify_expire` int(2) NOT NULL DEFAULT '1',
   `notify_usedup` int(2) NOT NULL DEFAULT '1',
-  `ref_by` int(11) NOT NULL DEFAULT '0',
+  `ref_by` int(11) NULL DEFAULT '0',
   `notice_status` int(10) NOT NULL DEFAULT '0',
   `notice_id` text,
   `onlineips` longtext,
