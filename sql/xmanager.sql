@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `accountname` text NOT NULL,
   `accountid` text NOT NULL,
   `accountpassword` text NOT NULL,
-  `allow_check` varchar(1) NOT NULL DEFAULT '0'
+  `allow_check` TINYINT(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
@@ -47,12 +47,13 @@ CREATE TABLE IF NOT EXISTS `config` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 
+
 INSERT INTO `config` (`name`, `value`) VALUES
 ('accessdenied', '0'),
 ('add_emoji_to_server_name', '1'),
 ('admin_telegram', ''),
 ('alipay', '1'),
-('alipay_url', NULL),
+('alipay_url', ''),
 ('allowaccess', '0'),
 ('api_key', 'Cs5PwEF4AwrY0XHQpyPx'),
 ('appName', 'XManager'),
@@ -65,6 +66,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('baseUrl', 'https://web.gbxcloud.com'),
 ('buy_reset', '1'),
 ('captcha', '0'),
+('chat_mode', '1'),
 ('cloudflare_domain', ''),
 ('cloudflare_email', ''),
 ('cloudflare_key', ''),
@@ -76,6 +78,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('cp_merchant_id', ''),
 ('cp_private_key', ''),
 ('cp_public_key', ''),
+('crisp_id', ''),
 ('default_currency', 'CNY'),
 ('default_currency_symbol', '¥'),
 ('easypay_apiurl', ''),
@@ -87,6 +90,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('email_verify', '0'),
 ('enablepayments', '1'),
 ('enable_backup', '0'),
+('enable_chat', '0'),
 ('enable_cloudflare', '0'),
 ('enable_coinpayments', '0'),
 ('enable_easypay', '0'),
@@ -100,14 +104,11 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('enable_mgate', '0'),
 ('enable_notification', '0'),
 ('enable_paypal', '0'),
-('enable_rebate', '0'),
+('enable_rebate', '1'),
 ('enable_reg', '0'),
 ('enable_stripe', '0'),
 ('enable_stripe_alipay', '0'),
 ('enable_stripe_wechat', '0'),
-('enable_chat', '0'),
-('chat_mode', '1'),
-('crisp_id', ''),
 ('enable_telegram', '0'),
 ('enable_theadpay', '0'),
 ('enable_vpay', '0'),
@@ -131,10 +132,11 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.0'),
-('latesversioncontent', NULL),
+('latesversion', 'v4.15'),
+('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
+('login_bind_ip', '0'),
 ('logo_path', '/uploads/X.png'),
 ('mailDriver', '0'),
 ('mailgun_domain', ''),
@@ -148,6 +150,8 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('mobile_loginverify', '0'),
 ('mobile_verify', '0'),
 ('muKey', 'XManager'),
+('payoutlimit', '100'),
+('payoutmethod', '1,2,3,4'),
 ('paypal_client', ''),
 ('paypal_currency_code', 'USD'),
 ('paypal_mode', 'sandbox'),
@@ -210,14 +214,14 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_auth_token', ''),
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
-('user_language_select', '1'),
-('version', 'v4.0'),
+('user_language_select', '0'),
+('version', 'v4.15'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
-('login_bind_ip','0'),
 ('webapisafe', '0'),
-('wechat_url', NULL);
+('wechat_url', '');
+
 
 
 CREATE TABLE IF NOT EXISTS `country` (
@@ -228,7 +232,8 @@ CREATE TABLE IF NOT EXISTS `country` (
   `alpha2` text NOT NULL,
   `alpha3` text NOT NULL,
   `code` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=245 DEFAULT CHARSET=utf8mb4;
+
 
 
 INSERT INTO `country` (`id`, `cnname`, `name`, `fullname`, `alpha2`, `alpha3`, `code`) VALUES
@@ -477,12 +482,6 @@ INSERT INTO `country` (`id`, `cnname`, `name`, `fullname`, `alpha2`, `alpha3`, `
 (243, '赞比亚', 'Zambia', 'the Republic of Zambia', 'ZM', 'ZMB', 894),
 (244, '津巴布韦', 'Zimbabwe', 'the Republic of Zimbabwe', 'ZW', 'ZWE', 716);
 
--- --------------------------------------------------------
-
---
--- Table structure for table `coupon`
---
-
 CREATE TABLE IF NOT EXISTS `coupon` (
   `id` bigint(20) NOT NULL,
   `name` varchar(25) DEFAULT NULL,
@@ -505,20 +504,20 @@ CREATE TABLE IF NOT EXISTS `currency` (
   `rate` decimal(12,2) NOT NULL DEFAULT '0.00',
   `status` int(2) NOT NULL DEFAULT '0',
   `updatetime` bigint(20) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 
 
 INSERT INTO `currency` (`id`, `name`, `code`, `symbol`, `rate`, `status`, `updatetime`) VALUES
-(1, 'United States Dollars', 'USD', '$', '0.16', 1, 1636502401),
-(2, 'British Pounds', 'GBP', '£', '0.12', 1, 1636502401),
-(3, 'Euro', 'EUR', '€', '0.14', 1, 1636502401),
-(4, 'Japanese Yen', 'JPY', '¥', '17.68', 1, 1636502401),
-(5, 'Chinese Yuan Renminbi', 'CNY', '¥', '1.00', 1, 1636502401),
-(6, 'Canadian Dollars', 'CAD', '$', '0.20', 1, 1636502401),
-(7, 'Hongkng Dollars', 'HKD', '$', '1.22', 1, 1636502401),
-(8, 'India Rupees', 'INR', '₹', '11.60', 1, 1636502401),
-(9, 'Russian Rubles', 'RUB', '₽', '11.11', 1, 1636502401),
-(10, 'New Taiwan dollars', 'TWD', 'NT$', '4.35', 1, 1636502401);
+(1, 'United States Dollars', 'USD', '$', '0.16', 1, 1637452802),
+(2, 'British Pounds', 'GBP', '£', '0.12', 1, 1637452802),
+(3, 'Euro', 'EUR', '€', '0.14', 1, 1637452802),
+(4, 'Japanese Yen', 'JPY', '¥', '17.85', 1, 1637452802),
+(5, 'Chinese Yuan Renminbi', 'CNY', '¥', '1.00', 1, 1637452802),
+(6, 'Canadian Dollars', 'CAD', '$', '0.20', 1, 1637452802),
+(7, 'Hongkng Dollars', 'HKD', '$', '1.22', 1, 1637452802),
+(8, 'India Rupees', 'INR', '₹', '11.69', 1, 1637452802),
+(9, 'Russian Rubles', 'RUB', '₽', '11.48', 1, 1637452802),
+(10, 'New Taiwan dollars', 'TWD', 'NT$', '4.36', 1, 1637452802);
 
 
 CREATE TABLE IF NOT EXISTS `email_verify` (
@@ -530,6 +529,7 @@ CREATE TABLE IF NOT EXISTS `email_verify` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
+
 CREATE TABLE IF NOT EXISTS `isocodes` (
   `id` int(11) NOT NULL,
   `iso` char(2) NOT NULL,
@@ -538,7 +538,7 @@ CREATE TABLE IF NOT EXISTS `isocodes` (
   `iso3` char(3) DEFAULT NULL,
   `numcode` smallint(6) DEFAULT NULL,
   `phonecode` int(5) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=254 DEFAULT CHARSET=latin1;
 
 
 INSERT INTO `isocodes` (`id`, `iso`, `name`, `nicename`, `iso3`, `numcode`, `phonecode`) VALUES
@@ -820,14 +820,12 @@ CREATE TABLE IF NOT EXISTS `login_ip` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-
 CREATE TABLE IF NOT EXISTS `mobile_verify` (
   `id` bigint(20) NOT NULL,
   `mobile` text CHARACTER SET utf8,
   `code` text CHARACTER SET utf8,
   `expire_in` bigint(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 
 
 CREATE TABLE IF NOT EXISTS `notice` (
@@ -839,8 +837,6 @@ CREATE TABLE IF NOT EXISTS `notice` (
   `markdown_cn` longtext
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
-
 CREATE TABLE IF NOT EXISTS `onlineip` (
   `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
@@ -848,6 +844,7 @@ CREATE TABLE IF NOT EXISTS `onlineip` (
   `ip` longtext NOT NULL,
   `datetime` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 
 CREATE TABLE IF NOT EXISTS `orders` (
@@ -907,7 +904,6 @@ CREATE TABLE IF NOT EXISTS `package` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-
 CREATE TABLE IF NOT EXISTS `password_reset` (
   `id` int(11) NOT NULL,
   `email` varchar(32) NOT NULL,
@@ -917,13 +913,23 @@ CREATE TABLE IF NOT EXISTS `password_reset` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+CREATE TABLE IF NOT EXISTS `payout` (
+  `id` int(12) NOT NULL,
+  `userid` int(12) NOT NULL,
+  `amount` decimal(12,2) NOT NULL DEFAULT '0.00',
+  `account` varchar(120) CHARACTER SET utf8 DEFAULT NULL,
+  `method` int(5) NOT NULL DEFAULT '1',
+  `status` int(11) DEFAULT NULL,
+  `datetime` bigint(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 CREATE TABLE IF NOT EXISTS `rule_list` (
   `id` int(11) NOT NULL,
   `name` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `regex` longtext COLLATE utf8mb4_unicode_ci,
   `type` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 INSERT INTO `rule_list` (`id`, `name`, `regex`, `type`) VALUES
@@ -935,7 +941,6 @@ INSERT INTO `rule_list` (`id`, `name`, `regex`, `type`) VALUES
 (6, 'BT', '(torrent|.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce.php?passkey=)', 1),
 (7, '360-2', '(.+.|^)(360|so).(cn|com)', 1),
 (8, 'Baidu-Nav', '(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com', 1);
-
 
 
 CREATE TABLE IF NOT EXISTS `rule_log` (
@@ -955,7 +960,7 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `server` varchar(300) NOT NULL,
   `headertype` text NOT NULL,
   `port` int(10) NOT NULL DEFAULT '443',
-  `outside_port` varchar(10) NOT NULL,
+  `outside_port` varchar(10) DEFAULT NULL,
   `protocol` text NOT NULL,
   `flow` text NOT NULL,
   `security` varchar(5) NOT NULL DEFAULT 'tls',
@@ -979,13 +984,11 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `mu_only` int(2) NOT NULL DEFAULT '1',
   `allowinsecure` tinyint(2) NOT NULL DEFAULT '0',
   `rserver` varchar(300) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
-
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 
 INSERT INTO `servers` (`id`, `name`, `type`, `server`, `headertype`, `port`, `outside_port`, `protocol`, `flow`, `security`, `xhost`, `xpath`, `info`, `status`, `rate`, `level`, `speedlimit`, `connector`, `bandwidth`, `bandwidth_limit`, `bandwidthlimit_resetday`, `heartbeat`, `node_ip`, `group`, `online`, `sort`, `method`, `mu_only`, `allowinsecure`, `rserver`) VALUES
-(1, 'Expired', 0, '8.8.8.8', '', 443, 0, '', '', 'tls', '', '', 'GB', NULL, 0, -1, 0, 0, 0, 0, 0, 0, '127.0.0.1', 0, 0, 1, 'aes-128-gcm', 1, 0, NULL);
-
+(1, 'Expired/过期', 0, '8.8.8.8', '', 443, '0', '', '', 'tls', '', '', 'GB', NULL, 0, -1, 0, 0, 0, 0, 0, 0, '127.0.0.1', 0, 0, 1, 'aes-128-gcm', 1, 0, NULL);
 
 
 CREATE TABLE IF NOT EXISTS `server_info` (
@@ -997,14 +1000,12 @@ CREATE TABLE IF NOT EXISTS `server_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-
 CREATE TABLE IF NOT EXISTS `server_online_log` (
   `id` int(11) NOT NULL,
   `node_id` int(11) NOT NULL,
   `online_user` int(11) NOT NULL,
   `log_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 
 
 CREATE TABLE IF NOT EXISTS `setup` (
@@ -1018,7 +1019,7 @@ CREATE TABLE IF NOT EXISTS `setup` (
   `url` text,
   `link` text,
   `icon` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 
 
@@ -1056,7 +1057,6 @@ INSERT INTO `setup` (`id`, `title`, `type`, `content`, `content_cn`, `datetime`,
 (31, NULL, '8', NULL, NULL, NULL, 0, NULL, NULL, ''),
 (32, NULL, '8', NULL, NULL, NULL, 0, NULL, NULL, '');
 
-
 CREATE TABLE IF NOT EXISTS `telegram_session` (
   `id` bigint(20) NOT NULL,
   `user_id` bigint(20) NOT NULL,
@@ -1066,24 +1066,10 @@ CREATE TABLE IF NOT EXISTS `telegram_session` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-CREATE TABLE IF NOT EXISTS `telegram_tasks` (
-  `id` int(11) unsigned NOT NULL,
-  `type` int(8) NOT NULL COMMENT '任务类型',
-  `status` int(2) NOT NULL DEFAULT '0' COMMENT '任务状态',
-  `chatid` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0' COMMENT 'Telegram Chat ID',
-  `messageid` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0' COMMENT 'Telegram Message ID',
-  `content` text COLLATE utf8mb4_unicode_ci COMMENT '任务详细内容',
-  `process` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '临时任务进度',
-  `userid` int(11) NOT NULL DEFAULT '0' COMMENT '网站用户 ID',
-  `tguserid` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0' COMMENT 'Telegram User ID',
-  `executetime` bigint(20) NOT NULL COMMENT '任务执行时间',
-  `datetime` bigint(20) NOT NULL COMMENT '任务产生时间'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Telegram 任务列表';
-
-
 CREATE TABLE IF NOT EXISTS `tmp_price` (
   `price` varchar(255) NOT NULL,
-  `oid` varchar(255) NOT NULL
+  `oid` varchar(255) NOT NULL,
+  `uid` int(12) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
@@ -1125,33 +1111,33 @@ CREATE TABLE IF NOT EXISTS `user` (
   `notification` int(3) NOT NULL DEFAULT '1',
   `notify_expire` int(2) NOT NULL DEFAULT '1',
   `notify_usedup` int(2) NOT NULL DEFAULT '1',
-  `ref_by` int(11) NOT NULL DEFAULT '0',
+  `ref_by` int(11) NULL DEFAULT '0',
   `notice_status` int(10) NOT NULL DEFAULT '0',
   `notice_id` text,
   `onlineips` longtext,
   `affclicks` int(20) NOT NULL DEFAULT '0',
   `ga_token` varchar(200) NOT NULL,
   `ga_enable` int(5) NOT NULL DEFAULT '0',
-  `allow_reset` tinyint(1) NOT NULL DEFAULT '1',
-  `reset_count` int(3) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+  `reset_count` int(3) NOT NULL DEFAULT '0',
+  `allow_reset` tinyint(1) NOT NULL DEFAULT '0',
+  `aff_completed` decimal(12,2) NOT NULL DEFAULT '0.00',
+  `aff_pending` decimal(12,2) NOT NULL DEFAULT '0.00',
+  `aff_balance` decimal(12,2) NOT NULL DEFAULT '0.00',
+  `aff_account` varchar(50) DEFAULT NULL,
+  `aff_with_mode` int(2) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-
-INSERT INTO `user` (`id`, `user_name`, `email`, `pass`, `passwd`, `method`, `uuid`, `mobile`, `t`, `u`, `d`, `transfer_enable`, `enable`, `reg_date`, `money`, `expire_time`, `reg_ip`, `speedlimit`, `connector`, `role`, `last_day_t`, `level`, `expire_in`, `remark`, `group`, `reset_day`, `reset_bandwidth`, `telegram_id`, `telegram_name`, `expire_notified`, `expire_notified_days`, `traffic_notified`, `traffic_notified_limit`, `afflink`, `notification`, `notify_expire`, `notify_usedup`, `ref_by`, `notice_status`, `notice_id`, `onlineips`, `affclicks`, `ga_token`, `ga_enable`, `reset_count`) VALUES
-(1, 'Admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'RbXjM0', 'aes-128-gcm', 'deaddac0-ed34-3a4c-a99c-60ffcbdbc292', '', 1636503571, 8479025, 913754509, 107374182400, 1, '2021-11-08 15:32:38', '0.00', 0, '127.0.0.1', 0, 2, 1, 0, 1, '2022-02-06 16:53:38', '', 0, 0, '0.00', NULL, NULL, 0, 0, 0, 0, 'HHOEbuNpVw', 1, 1, 1, 0, 0, NULL, NULL, 9, 'YR2TMFFMOJWZB4WI', 0, 0);
-
-
-CREATE TABLE IF NOT EXISTS `user_subscribe_log` (
-  `id` int(11) unsigned NOT NULL,
-  `user_name` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '用户名',
-  `user_id` int(11) NOT NULL COMMENT '用户 ID',
-  `email` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '用户邮箱',
-  `subscribe_type` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '获取的订阅类型',
-  `request_ip` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '请求 IP',
-  `request_time` datetime NOT NULL COMMENT '请求时间',
-  `request_user_agent` text COLLATE utf8mb4_unicode_ci COMMENT '请求 UA 信息'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用户订阅日志';
+CREATE TABLE `user_subscribe_log` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `user_name` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `email` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subscribe_type` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `request_ip` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `request_time` datetime NOT NULL,
+  `request_user_agent` text COLLATE utf8mb4_unicode_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 CREATE TABLE IF NOT EXISTS `user_token` (
@@ -1161,7 +1147,6 @@ CREATE TABLE IF NOT EXISTS `user_token` (
   `create_time` int(11) NOT NULL,
   `expire_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 
 
 CREATE TABLE IF NOT EXISTS `user_traffic_log` (
@@ -1175,7 +1160,6 @@ CREATE TABLE IF NOT EXISTS `user_traffic_log` (
   `log_time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
 ALTER TABLE `accounts`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
@@ -1187,28 +1171,36 @@ ALTER TABLE `captcha`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
+
 ALTER TABLE `commission`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
+
 ALTER TABLE `config`
   ADD UNIQUE KEY `name` (`name`);
+
 
 ALTER TABLE `country`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
+
 ALTER TABLE `coupon`
   ADD PRIMARY KEY (`id`);
+
 
 ALTER TABLE `currency`
   ADD PRIMARY KEY (`id`);
 
+
 ALTER TABLE `email_verify`
   ADD PRIMARY KEY (`id`);
 
+
 ALTER TABLE `isocodes`
   ADD PRIMARY KEY (`id`);
+
 
 ALTER TABLE `link`
   ADD PRIMARY KEY (`id`),
@@ -1235,11 +1227,16 @@ ALTER TABLE `package`
 ALTER TABLE `password_reset`
   ADD PRIMARY KEY (`id`);
 
+ALTER TABLE `payout`
+  ADD PRIMARY KEY (`id`);
+
 ALTER TABLE `rule_list`
   ADD PRIMARY KEY (`id`);
 
+
 ALTER TABLE `rule_log`
   ADD PRIMARY KEY (`id`);
+
 
 ALTER TABLE `servers`
   ADD PRIMARY KEY (`id`),
@@ -1257,15 +1254,6 @@ ALTER TABLE `setup`
 ALTER TABLE `telegram_session`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `telegram_tasks`
---
-ALTER TABLE `telegram_tasks`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `tmp_price`
---
 ALTER TABLE `tmp_price`
   ADD PRIMARY KEY (`price`);
 
@@ -1329,6 +1317,9 @@ ALTER TABLE `package`
 ALTER TABLE `password_reset`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
+ALTER TABLE `payout`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
+
 ALTER TABLE `rule_list`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 
@@ -1350,11 +1341,8 @@ ALTER TABLE `setup`
 ALTER TABLE `telegram_session`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 
-ALTER TABLE `telegram_tasks`
-  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
-
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `user_subscribe_log`
   MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
@@ -1364,3 +1352,6 @@ ALTER TABLE `user_token`
 
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `onlineip` 
+	MODIFY `id` INT(11) NOT NULL AUTO_INCREMENT;
