@@ -21,5 +21,5 @@ A Trojan, Shadowsocks(2022), vmess, Vless user management panel
 ```
 配置文件路径：/etc/XMPlus 配置文件详见：配置文件说明
 
-bash <(curl -Ls https://raw.githubusercontent.com/xcode75/Xray/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/xcode75/XManagerPlus/XMPlus/install.sh)
 ```
