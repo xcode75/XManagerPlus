@@ -1,6 +1,6 @@
 # XMPlus
 
-### [Installation](https://xcode75.github.io/XMPlus-Docs/)
+### [Installation](https://xcode75.github.io/XMPlusDocs/)
 
 ### [Telegram Channel](https://t.me/XManagerPlus)
 
