@@ -1,5 +1,5 @@
 # XMPlus
-## [Open issue template](https://github.com/xcode75/XManagerPlus/wiki/OPENING-ISSUE-ON-GITHUB)
+
 ### [Documentation](https://xcode75.github.io/XMPlusDocs/)
 
 ### [Telegram Channel](https://t.me/XManagerPlus)
